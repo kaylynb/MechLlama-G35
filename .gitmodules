@@ -1,0 +1,7 @@
+[submodule "PCB/libraries/MX_Alps_Hybrid"]
+	path = PCB/libraries/MX_Alps_Hybrid
+	url = https://github.com/kaylynb/MX_Alps_Hybrid.git
+	branch = AddSilkscreen
+[submodule "PCB/libraries/MechLlama-KiCad"]
+	path = PCB/libraries/MechLlama-KiCad
+	url = https://github.com/kaylynb/MechLlama-KiCad.git

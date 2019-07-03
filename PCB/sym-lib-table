@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MechLlama)(type Legacy)(uri ${KIPRJMOD}/libraries/MechLlama-KiCad/Symbol_Libraries/MechLlama.lib)(options "")(descr ""))
+)

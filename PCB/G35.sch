@@ -1,0 +1,2333 @@
+EESchema Schematic File Version 4
+LIBS:G35-cache
+EELAYER 29 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 2
+Title "MechLlama G35"
+Date "2019-06-17"
+Rev "v2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5CC61197
+P 1525 2675
+F 0 "U1" H 1025 4425 50  0000 L BNN
+F 1 "ATmega32U4-AU" H 1625 925 50  0000 L TNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 1525 2675 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 1525 2675 50  0001 C CNN
+	1    1525 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5CC63E63
+P 1525 800
+F 0 "#PWR0101" H 1525 650 50  0001 C CNN
+F 1 "+5V" H 1525 940 50  0000 C CNN
+F 2 "" H 1525 800 50  0001 C CNN
+F 3 "" H 1525 800 50  0001 C CNN
+	1    1525 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 800  1525 875 
+Wire Wire Line
+	1525 800  1625 800 
+Wire Wire Line
+	1625 800  1625 875 
+Connection ~ 1525 800 
+Wire Wire Line
+	1525 800  1425 800 
+Wire Wire Line
+	1425 800  1425 875 
+$Comp
+L power:GND #PWR0102
+U 1 1 5CCAAB7C
+P 3725 3525
+F 0 "#PWR0102" H 3725 3275 50  0001 C CNN
+F 1 "GND" H 3725 3375 50  0000 C CNN
+F 2 "" H 3725 3525 50  0001 C CNN
+F 3 "" H 3725 3525 50  0001 C CNN
+	1    3725 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 1375 3725 1375
+Wire Wire Line
+	3325 1375 3075 1375
+Connection ~ 3325 1375
+Wire Wire Line
+	3325 1675 3075 1675
+$Comp
+L power:GND #PWR0103
+U 1 1 5CD34A79
+P 3125 1950
+F 0 "#PWR0103" H 3125 1700 50  0001 C CNN
+F 1 "GND" H 3125 1800 50  0000 C CNN
+F 2 "" H 3125 1950 50  0001 C CNN
+F 3 "" H 3125 1950 50  0001 C CNN
+	1    3125 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 1525 3125 1875
+Wire Wire Line
+	3125 1875 3525 1875
+Wire Wire Line
+	3525 1875 3525 1525
+Connection ~ 3125 1875
+Wire Wire Line
+	3125 1875 3125 1950
+Wire Wire Line
+	3725 1675 3325 1675
+Connection ~ 3325 1675
+Wire Wire Line
+	2875 1375 2800 1375
+Wire Wire Line
+	2800 1375 2800 1675
+Wire Wire Line
+	2800 1675 2875 1675
+Wire Wire Line
+	2800 1675 2800 1875
+Wire Wire Line
+	2800 1875 3125 1875
+Connection ~ 2800 1675
+$Comp
+L power:+5V #PWR0104
+U 1 1 5CD872CA
+P 800 1875
+F 0 "#PWR0104" H 800 1725 50  0001 C CNN
+F 1 "+5V" H 800 2015 50  0000 C CNN
+F 2 "" H 800 1875 50  0001 C CNN
+F 3 "" H 800 1875 50  0001 C CNN
+	1    800  1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	925  1975 800  1975
+Wire Wire Line
+	800  1975 800  1875
+NoConn ~ 925  1775
+Text GLabel 925  2175 0    50   Input ~ 0
+D+
+Text GLabel 925  2275 0    50   Input ~ 0
+D-
+$Comp
+L Device:C_Small C1
+U 1 1 5CD9BADE
+P 825 2675
+F 0 "C1" H 835 2745 50  0000 L CNN
+F 1 "1uF" H 835 2595 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 825 2675 50  0001 C CNN
+F 3 "~" H 825 2675 50  0001 C CNN
+	1    825  2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	925  2475 825  2475
+Wire Wire Line
+	825  2475 825  2575
+$Comp
+L power:GND #PWR0105
+U 1 1 5CDB82F9
+P 825 2875
+F 0 "#PWR0105" H 825 2625 50  0001 C CNN
+F 1 "GND" H 825 2725 50  0000 C CNN
+F 2 "" H 825 2875 50  0001 C CNN
+F 3 "" H 825 2875 50  0001 C CNN
+	1    825  2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	825  2875 825  2775
+$Comp
+L power:GND #PWR0106
+U 1 1 5CDCC1E7
+P 1475 4550
+F 0 "#PWR0106" H 1475 4300 50  0001 C CNN
+F 1 "GND" H 1475 4400 50  0000 C CNN
+F 2 "" H 1475 4550 50  0001 C CNN
+F 3 "" H 1475 4550 50  0001 C CNN
+	1    1475 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 4475 1525 4525
+Wire Wire Line
+	1525 4525 1475 4525
+Wire Wire Line
+	1475 4525 1475 4550
+Wire Wire Line
+	1475 4525 1425 4525
+Wire Wire Line
+	1425 4525 1425 4475
+Connection ~ 1475 4525
+$Comp
+L Device:R R3
+U 1 1 5CDE1570
+P 2350 3275
+F 0 "R3" V 2275 3225 50  0000 L CNN
+F 1 "10k" V 2350 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2350 3275 50  0001 C CNN
+F 3 "~" H 2350 3275 50  0001 C CNN
+	1    2350 3275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2125 3275 2200 3275
+Wire Wire Line
+	2550 3275 2550 3350
+Text GLabel 2125 1275 2    50   Input ~ 0
+SCK
+Text GLabel 2125 1375 2    50   Input ~ 0
+MOSI
+Text GLabel 2125 1475 2    50   Input ~ 0
+MISO
+Text GLabel 2125 2375 2    50   Input ~ 0
+SCL
+Text GLabel 2125 2475 2    50   Input ~ 0
+SDA
+$Comp
+L Device:R R4
+U 1 1 5CE182CD
+P 3400 2550
+F 0 "R4" V 3325 2500 50  0000 L CNN
+F 1 "4.7k" V 3400 2475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3400 2550 50  0001 C CNN
+F 3 "~" H 3400 2550 50  0001 C CNN
+	1    3400 2550
+	0    1    1    0   
+$EndComp
+Text GLabel 3175 2550 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	3175 2550 3250 2550
+$Comp
+L power:+5V #PWR0107
+U 1 1 5CE39421
+P 3600 2475
+F 0 "#PWR0107" H 3600 2325 50  0001 C CNN
+F 1 "+5V" H 3600 2615 50  0000 C CNN
+F 2 "" H 3600 2475 50  0001 C CNN
+F 3 "" H 3600 2475 50  0001 C CNN
+	1    3600 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2550 3600 2550
+Wire Wire Line
+	3600 2550 3600 2475
+Text GLabel 3175 2800 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	3250 2800 3175 2800
+Wire Wire Line
+	3550 2800 3600 2800
+Wire Wire Line
+	3600 2800 3600 2550
+Connection ~ 3600 2550
+$Comp
+L Connector_Generic:Conn_01x04 OLED1
+U 1 1 5CE69A8A
+P 4975 5750
+F 0 "OLED1" H 4975 5950 50  0000 C CNN
+F 1 "SSD1306" H 4975 5450 50  0000 C CNN
+F 2 "MechLlama:PinHeader_SSD1306" H 4975 5750 50  0001 C CNN
+F 3 "~" H 4975 5750 50  0001 C CNN
+	1    4975 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5CE6B928
+P 4300 5725
+F 0 "#PWR0108" H 4300 5475 50  0001 C CNN
+F 1 "GND" H 4300 5575 50  0000 C CNN
+F 2 "" H 4300 5725 50  0001 C CNN
+F 3 "" H 4300 5725 50  0001 C CNN
+	1    4300 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5725 4300 5650
+Wire Wire Line
+	4300 5650 4775 5650
+Wire Wire Line
+	4775 5750 4575 5750
+Wire Wire Line
+	4575 5750 4575 5850
+Wire Wire Line
+	4575 5850 4475 5850
+Text GLabel 4775 5850 0    50   Input ~ 0
+SCL
+Text GLabel 4775 5950 0    50   Input ~ 0
+SDA
+Text GLabel 925  1375 0    50   Input ~ 0
+XTAL1
+Text GLabel 925  1575 0    50   Input ~ 0
+XTAL2
+Text GLabel 3725 1375 2    50   Input ~ 0
+XTAL1
+Text GLabel 3725 1675 2    50   Input ~ 0
+XTAL2
+Text GLabel 925  1175 0    50   Input ~ 0
+RESET
+Text GLabel 3125 3525 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	3625 3525 3725 3525
+Wire Wire Line
+	3125 3525 3175 3525
+$Comp
+L power:+5V #PWR0110
+U 1 1 5CFAFE2A
+P 2575 4150
+F 0 "#PWR0110" H 2575 4000 50  0001 C CNN
+F 1 "+5V" H 2575 4290 50  0000 C CNN
+F 2 "" H 2575 4150 50  0001 C CNN
+F 3 "" H 2575 4150 50  0001 C CNN
+	1    2575 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 4150 2575 4175
+Wire Wire Line
+	2575 4175 2650 4175
+Wire Wire Line
+	2650 4200 2650 4175
+Wire Wire Line
+	2650 4175 2900 4175
+Wire Wire Line
+	2900 4175 2900 4200
+Connection ~ 2650 4175
+$Comp
+L Device:C_Small C4
+U 1 1 5CFD5E59
+P 3150 4300
+F 0 "C4" H 3160 4370 50  0000 L CNN
+F 1 "0.1uF" H 3160 4220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3150 4300 50  0001 C CNN
+F 3 "~" H 3150 4300 50  0001 C CNN
+	1    3150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4175 3150 4175
+Wire Wire Line
+	3150 4175 3150 4200
+Connection ~ 2900 4175
+Wire Wire Line
+	2650 4425 2650 4400
+Wire Wire Line
+	2900 4400 2900 4425
+Connection ~ 2900 4425
+Wire Wire Line
+	2900 4425 2650 4425
+Wire Wire Line
+	3150 4400 3150 4425
+Wire Wire Line
+	3150 4425 2900 4425
+Wire Wire Line
+	2650 4425 2575 4425
+Wire Wire Line
+	2575 4425 2575 4450
+Connection ~ 2650 4425
+$Comp
+L power:GND #PWR0111
+U 1 1 5D04A5F1
+P 2575 4450
+F 0 "#PWR0111" H 2575 4200 50  0001 C CNN
+F 1 "GND" H 2575 4300 50  0000 C CNN
+F 2 "" H 2575 4450 50  0001 C CNN
+F 3 "" H 2575 4450 50  0001 C CNN
+	1    2575 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0112
+U 1 1 5D06E07D
+P 2550 5250
+F 0 "#PWR0112" H 2550 5100 50  0001 C CNN
+F 1 "VCC" H 2550 5400 50  0000 C CNN
+F 2 "" H 2550 5250 50  0001 C CNN
+F 3 "" H 2550 5250 50  0001 C CNN
+	1    2550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2375 5325 2425 5325
+Wire Wire Line
+	2550 5325 2550 5250
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5D08BD04
+P 2850 5325
+F 0 "F1" V 2775 5325 50  0000 C CNN
+F 1 "500mA" V 2925 5325 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 2900 5125 50  0001 L CNN
+F 3 "~" H 2850 5325 50  0001 C CNN
+	1    2850 5325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 5325 2750 5325
+Connection ~ 2550 5325
+$Comp
+L power:+5V #PWR0113
+U 1 1 5D09B583
+P 3125 5250
+F 0 "#PWR0113" H 3125 5100 50  0001 C CNN
+F 1 "+5V" H 3125 5390 50  0000 C CNN
+F 2 "" H 3125 5250 50  0001 C CNN
+F 3 "" H 3125 5250 50  0001 C CNN
+	1    3125 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 5250 3125 5325
+Wire Wire Line
+	3125 5325 2950 5325
+Wire Wire Line
+	3125 5325 3425 5325
+Wire Wire Line
+	3425 5325 3425 5250
+Connection ~ 3125 5325
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D0C891F
+P 3425 5250
+F 0 "#FLG0101" H 3425 5325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3425 5400 50  0000 C CNN
+F 2 "" H 3425 5250 50  0001 C CNN
+F 3 "~" H 3425 5250 50  0001 C CNN
+	1    3425 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1475 6825 1475 6900
+Wire Wire Line
+	1475 6900 1625 6900
+Wire Wire Line
+	1775 6900 1775 6825
+$Comp
+L power:GND #PWR0114
+U 1 1 5D0F5E8B
+P 1625 7025
+F 0 "#PWR0114" H 1625 6775 50  0001 C CNN
+F 1 "GND" H 1625 6875 50  0000 C CNN
+F 2 "" H 1625 7025 50  0001 C CNN
+F 3 "" H 1625 7025 50  0001 C CNN
+	1    1625 7025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 7025 1625 6950
+Connection ~ 1625 6900
+Wire Wire Line
+	1625 6900 1775 6900
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D105EDE
+P 1325 7025
+F 0 "#FLG0102" H 1325 7100 50  0001 C CNN
+F 1 "PWR_FLAG" H 1325 7175 50  0000 C CNN
+F 2 "" H 1325 7025 50  0001 C CNN
+F 3 "~" H 1325 7025 50  0001 C CNN
+	1    1325 7025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1625 6950 1325 6950
+Wire Wire Line
+	1325 6950 1325 7025
+Connection ~ 1625 6950
+Wire Wire Line
+	1625 6950 1625 6900
+NoConn ~ 2375 6425
+NoConn ~ 2375 6525
+$Comp
+L power:GND #PWR0115
+U 1 1 5CDF8E1D
+P 2550 3350
+F 0 "#PWR0115" H 2550 3100 50  0001 C CNN
+F 1 "GND" H 2550 3200 50  0000 C CNN
+F 2 "" H 2550 3350 50  0001 C CNN
+F 3 "" H 2550 3350 50  0001 C CNN
+	1    2550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3275 2550 3275
+$Comp
+L Device:R R1
+U 1 1 5D228EE6
+P 2650 5525
+F 0 "R1" V 2575 5525 50  0000 C CNN
+F 1 "5.1k" V 2650 5525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2580 5525 50  0001 C CNN
+F 3 "~" H 2650 5525 50  0001 C CNN
+	1    2650 5525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D229414
+P 2650 5625
+F 0 "R2" V 2730 5625 50  0000 C CNN
+F 1 "5.1k" V 2650 5625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2580 5625 50  0001 C CNN
+F 3 "~" H 2650 5625 50  0001 C CNN
+	1    2650 5625
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5D24A58C
+P 2925 5625
+F 0 "#PWR0116" H 2925 5375 50  0001 C CNN
+F 1 "GND" H 2925 5475 50  0000 C CNN
+F 2 "" H 2925 5625 50  0001 C CNN
+F 3 "" H 2925 5625 50  0001 C CNN
+	1    2925 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5525 2850 5525
+Wire Wire Line
+	2850 5525 2850 5575
+Wire Wire Line
+	2850 5575 2925 5575
+Wire Wire Line
+	2925 5575 2925 5625
+Wire Wire Line
+	2800 5625 2850 5625
+Wire Wire Line
+	2850 5625 2850 5575
+Connection ~ 2850 5575
+Wire Wire Line
+	2500 5525 2375 5525
+Wire Wire Line
+	2375 5625 2500 5625
+Wire Wire Line
+	2375 5825 2475 5825
+Wire Wire Line
+	2475 5825 2475 5875
+Wire Wire Line
+	2375 5925 2475 5925
+Wire Wire Line
+	2475 5925 2475 5875
+Connection ~ 2475 5875
+Wire Wire Line
+	2375 6125 2475 6125
+Wire Wire Line
+	2475 6125 2475 6075
+Wire Wire Line
+	2475 6025 2375 6025
+Connection ~ 2475 6075
+Wire Wire Line
+	2475 6075 2475 6025
+Wire Wire Line
+	3325 5875 3325 6250
+Wire Wire Line
+	2475 5875 3325 5875
+Wire Wire Line
+	2750 7350 3325 7350
+Wire Wire Line
+	3325 7350 3325 7250
+Wire Wire Line
+	2475 6075 2750 6075
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5D3E8342
+P 2375 5125
+F 0 "#FLG0103" H 2375 5200 50  0001 C CNN
+F 1 "PWR_FLAG" H 2375 5275 50  0000 C CNN
+F 2 "" H 2375 5125 50  0001 C CNN
+F 3 "~" H 2375 5125 50  0001 C CNN
+	1    2375 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2425 5325 2425 5200
+Wire Wire Line
+	2425 5200 2375 5200
+Wire Wire Line
+	2375 5200 2375 5125
+Connection ~ 2425 5325
+Wire Wire Line
+	2425 5325 2550 5325
+Wire Wire Line
+	3325 5875 3450 5875
+Connection ~ 3325 5875
+Text GLabel 3750 5875 2    50   Input ~ 0
+D-
+Wire Wire Line
+	2750 6075 2800 6075
+Connection ~ 2750 6075
+Text GLabel 3100 6075 2    50   Input ~ 0
+D+
+NoConn ~ 2125 3375
+NoConn ~ 2125 2175
+NoConn ~ 2125 1875
+NoConn ~ 2125 1175
+Text GLabel 4850 7100 2    50   Input ~ 0
+RESET
+Text GLabel 4850 7000 2    50   Input ~ 0
+SCK
+Text GLabel 4850 6900 2    50   Input ~ 0
+MOSI
+Text GLabel 4850 6800 2    50   Input ~ 0
+MISO
+$Comp
+L power:+5V #PWR01
+U 1 1 5D7096A1
+P 4350 6500
+F 0 "#PWR01" H 4350 6350 50  0001 C CNN
+F 1 "+5V" H 4350 6640 50  0000 C CNN
+F 2 "" H 4350 6500 50  0001 C CNN
+F 3 "" H 4350 6500 50  0001 C CNN
+	1    4350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D70A111
+P 4350 7400
+F 0 "#PWR02" H 4350 7150 50  0001 C CNN
+F 1 "GND" H 4350 7250 50  0000 C CNN
+F 2 "" H 4350 7400 50  0001 C CNN
+F 3 "" H 4350 7400 50  0001 C CNN
+	1    4350 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5925 7100 2    50   Input ~ 0
+RESET
+Text GLabel 5925 7000 2    50   Input ~ 0
+SCK
+Text GLabel 5925 6900 2    50   Input ~ 0
+MOSI
+Text GLabel 5925 6800 2    50   Input ~ 0
+MISO
+$Comp
+L power:+5V #PWR03
+U 1 1 5D70C120
+P 5425 6500
+F 0 "#PWR03" H 5425 6350 50  0001 C CNN
+F 1 "+5V" H 5425 6640 50  0000 C CNN
+F 2 "" H 5425 6500 50  0001 C CNN
+F 3 "" H 5425 6500 50  0001 C CNN
+	1    5425 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D70C12A
+P 5425 7400
+F 0 "#PWR04" H 5425 7150 50  0001 C CNN
+F 1 "GND" H 5425 7250 50  0000 C CNN
+F 2 "" H 5425 7400 50  0001 C CNN
+F 3 "" H 5425 7400 50  0001 C CNN
+	1    5425 7400
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4125 4775 575  4775
+Text Notes 600  700  0    50   ~ 0
+MCU
+Wire Notes Line
+	4125 600  4125 7625
+Wire Notes Line
+	575  600  575  7625
+Text Notes 600  4875 0    50   ~ 0
+USB & Power Protection
+Wire Notes Line
+	6225 6200 4125 6200
+Wire Notes Line
+	575  7625 6225 7625
+Text Notes 4150 6300 0    50   ~ 0
+ISP Headers
+Wire Notes Line
+	5200 6200 5200 5375
+Text Notes 4150 5475 0    50   ~ 0
+SSD1306 OLED Header
+Wire Wire Line
+	5425 1200 5425 1050
+Wire Wire Line
+	4800 1050 4825 1050
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K0:0
+U 1 1 5CC0C5BA
+P 5025 1050
+F 0 "K0:0" H 5025 1150 50  0000 L CNN
+F 1 "MX_1U" H 5025 990 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5025 1250 50  0001 C CNN
+F 3 "~" H 5025 1250 50  0001 C CNN
+	1    5025 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:5
+U 1 1 5CC79E42
+P 8150 3250
+F 0 "K4:5" H 8150 3350 50  0000 L CNN
+F 1 "MX_1.75U" H 8150 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.75U-NoLED" H 8150 3450 50  0001 C CNN
+F 3 "~" H 8150 3450 50  0001 C CNN
+	1    8150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:3
+U 1 1 5CC79E1B
+P 6900 3250
+F 0 "K4:3" H 6900 3350 50  0000 L CNN
+F 1 "MX_1.25U" H 6900 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 6900 3450 50  0001 C CNN
+F 3 "~" H 6900 3450 50  0001 C CNN
+	1    6900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:4
+U 1 1 5CC79E2F
+P 7525 3250
+F 0 "K4:4" H 7525 3350 50  0000 L CNN
+F 1 "MX_1.5U" H 7525 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.5U-NoLED" H 7525 3450 50  0001 C CNN
+F 3 "~" H 7525 3450 50  0001 C CNN
+	1    7525 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:2
+U 1 1 5CC79E08
+P 6275 3250
+F 0 "K4:2" H 6275 3350 50  0000 L CNN
+F 1 "MX_1.5U" H 6275 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.5U-NoLED" H 6275 3450 50  0001 C CNN
+F 3 "~" H 6275 3450 50  0001 C CNN
+	1    6275 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D4:6
+U 1 1 5CC79E5B
+P 8400 3500
+F 0 "D4:6" H 8375 3600 50  0000 L CNN
+F 1 "D" H 8375 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 8400 3500 50  0001 C CNN
+F 3 "~" V 8400 3500 50  0001 C CNN
+	1    8400 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K0:1
+U 1 1 5CC0E01C
+P 5650 1050
+F 0 "K0:1" H 5650 1150 50  0000 L CNN
+F 1 "MX_1U" H 5650 990 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5650 1250 50  0001 C CNN
+F 3 "~" H 5650 1250 50  0001 C CNN
+	1    5650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2700 8350 3250
+Wire Wire Line
+	7725 2700 7725 3250
+Wire Wire Line
+	7100 2700 7100 3250
+Wire Wire Line
+	6475 2700 6475 3250
+Wire Wire Line
+	5850 2700 5850 3250
+Wire Wire Line
+	5225 2700 5225 3250
+Connection ~ 7925 3600
+Wire Wire Line
+	7925 3600 8400 3600
+Wire Wire Line
+	7925 3250 7925 3400
+Wire Wire Line
+	7950 3250 7925 3250
+$Comp
+L Device:D_Small D4:5
+U 1 1 5CC79E48
+P 7925 3500
+F 0 "D4:5" H 7900 3600 50  0000 L CNN
+F 1 "D" H 7900 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7925 3500 50  0001 C CNN
+F 3 "~" V 7925 3500 50  0001 C CNN
+	1    7925 3500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7300 3600
+Wire Wire Line
+	7300 3600 7925 3600
+Wire Wire Line
+	7300 3250 7300 3400
+Wire Wire Line
+	7325 3250 7300 3250
+$Comp
+L Device:D_Small D4:4
+U 1 1 5CC79E35
+P 7300 3500
+F 0 "D4:4" H 7275 3600 50  0000 L CNN
+F 1 "D" H 7275 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7300 3500 50  0001 C CNN
+F 3 "~" V 7300 3500 50  0001 C CNN
+	1    7300 3500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6050 3600
+Connection ~ 6675 3600
+Wire Wire Line
+	6675 3600 7300 3600
+Wire Wire Line
+	6675 3250 6675 3400
+Wire Wire Line
+	6700 3250 6675 3250
+$Comp
+L Device:D_Small D4:3
+U 1 1 5CC79E21
+P 6675 3500
+F 0 "D4:3" H 6650 3600 50  0000 L CNN
+F 1 "D" H 6650 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6675 3500 50  0001 C CNN
+F 3 "~" V 6675 3500 50  0001 C CNN
+	1    6675 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 3600 6675 3600
+Connection ~ 5425 3600
+Wire Wire Line
+	6050 3250 6050 3400
+Wire Wire Line
+	6075 3250 6050 3250
+$Comp
+L Device:D_Small D4:2
+U 1 1 5CC79E0E
+P 6050 3500
+F 0 "D4:2" H 6025 3600 50  0000 L CNN
+F 1 "D" H 6025 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6050 3500 50  0001 C CNN
+F 3 "~" V 6050 3500 50  0001 C CNN
+	1    6050 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5425 3600 6050 3600
+Wire Wire Line
+	5425 3250 5425 3400
+Wire Wire Line
+	5450 3250 5425 3250
+$Comp
+L Device:D_Small D4:1
+U 1 1 5CC79DFA
+P 5425 3500
+F 0 "D4:1" H 5400 3600 50  0000 L CNN
+F 1 "D" H 5400 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 5425 3500 50  0001 C CNN
+F 3 "~" V 5425 3500 50  0001 C CNN
+	1    5425 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:1
+U 1 1 5CC79DF4
+P 5650 3250
+F 0 "K4:1" H 5650 3350 50  0000 L CNN
+F 1 "MX_1U" H 5650 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5650 3450 50  0001 C CNN
+F 3 "~" H 5650 3450 50  0001 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 3600
+Wire Wire Line
+	4800 3600 5425 3600
+Wire Wire Line
+	4600 3600 4800 3600
+Text GLabel 4600 3600 0    50   Input ~ 0
+row4
+Wire Wire Line
+	4800 3250 4800 3400
+Wire Wire Line
+	4825 3250 4800 3250
+$Comp
+L Device:D_Small D4:0
+U 1 1 5CC79DE7
+P 4800 3500
+F 0 "D4:0" H 4775 3600 50  0000 L CNN
+F 1 "D" H 4775 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 4800 3500 50  0001 C CNN
+F 3 "~" V 4800 3500 50  0001 C CNN
+	1    4800 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:0
+U 1 1 5CC79DE1
+P 5025 3250
+F 0 "K4:0" H 5025 3350 50  0000 L CNN
+F 1 "MX_1U" H 5025 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5025 3450 50  0001 C CNN
+F 3 "~" H 5025 3450 50  0001 C CNN
+	1    5025 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 2150 8975 2700
+Wire Wire Line
+	8350 2150 8350 2700
+Wire Wire Line
+	7725 2150 7725 2700
+Wire Wire Line
+	7100 2150 7100 2700
+Wire Wire Line
+	6475 2150 6475 2700
+Wire Wire Line
+	5850 2150 5850 2700
+Wire Wire Line
+	5225 2150 5225 2700
+Wire Wire Line
+	8550 2700 8550 2850
+Wire Wire Line
+	8575 2700 8550 2700
+$Comp
+L Device:D_Small D3:6
+U 1 1 5CC6C7E9
+P 8550 2950
+F 0 "D3:6" H 8525 3050 50  0000 L CNN
+F 1 "D" H 8525 2850 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 8550 2950 50  0001 C CNN
+F 3 "~" V 8550 2950 50  0001 C CNN
+	1    8550 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K3:6
+U 1 1 5CC6C7E3
+P 8775 2700
+F 0 "K3:6" H 8775 2800 50  0000 L CNN
+F 1 "MX_1U" H 8775 2640 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8775 2900 50  0001 C CNN
+F 3 "~" H 8775 2900 50  0001 C CNN
+	1    8775 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7925 3050
+Wire Wire Line
+	7925 3050 8550 3050
+Connection ~ 8350 2700
+Wire Wire Line
+	7925 2700 7925 2850
+Wire Wire Line
+	7950 2700 7925 2700
+$Comp
+L Device:D_Small D3:5
+U 1 1 5CC6C7D6
+P 7925 2950
+F 0 "D3:5" H 7900 3050 50  0000 L CNN
+F 1 "D" H 7900 2850 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7925 2950 50  0001 C CNN
+F 3 "~" V 7925 2950 50  0001 C CNN
+	1    7925 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K3:5
+U 1 1 5CC6C7D0
+P 8150 2700
+F 0 "K3:5" H 8150 2800 50  0000 L CNN
+F 1 "MX_1U" H 8150 2640 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8150 2900 50  0001 C CNN
+F 3 "~" H 8150 2900 50  0001 C CNN
+	1    8150 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 3050
+Wire Wire Line
+	7300 3050 7925 3050
+Connection ~ 7725 2700
+Wire Wire Line
+	7300 2700 7300 2850
+Wire Wire Line
+	7325 2700 7300 2700
+$Comp
+L Device:D_Small D3:4
+U 1 1 5CC6C7C3
+P 7300 2950
+F 0 "D3:4" H 7275 3050 50  0000 L CNN
+F 1 "D" H 7275 2850 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7300 2950 50  0001 C CNN
+F 3 "~" V 7300 2950 50  0001 C CNN
+	1    7300 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K3:4
+U 1 1 5CC6C7BD
+P 7525 2700
+F 0 "K3:4" H 7525 2800 50  0000 L CNN
+F 1 "MX_1U" H 7525 2640 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7525 2900 50  0001 C CNN
+F 3 "~" H 7525 2900 50  0001 C CNN
+	1    7525 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 3050
+Connection ~ 6675 3050
+Wire Wire Line
+	6675 3050 7300 3050
+Connection ~ 7100 2700
+Wire Wire Line
+	6675 2700 6675 2850
+Wire Wire Line
+	6700 2700 6675 2700
+$Comp
+L Device:D_Small D3:3
+U 1 1 5CC6C7AF
+P 6675 2950
+F 0 "D3:3" H 6650 3050 50  0000 L CNN
+F 1 "D" H 6650 2850 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6675 2950 50  0001 C CNN
+F 3 "~" V 6675 2950 50  0001 C CNN
+	1    6675 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K3:3
+U 1 1 5CC6C7A9
+P 6900 2700
+F 0 "K3:3" H 6900 2800 50  0000 L CNN
+F 1 "MX_1U" H 6900 2640 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6900 2900 50  0001 C CNN
+F 3 "~" H 6900 2900 50  0001 C CNN
+	1    6900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3050 6675 3050
+Connection ~ 5425 3050
+Connection ~ 6475 2700
+Wire Wire Line
+	6050 2700 6050 2850
+Wire Wire Line
+	6075 2700 6050 2700
+$Comp
+L Device:D_Small D3:2
+U 1 1 5CC6C79C
+P 6050 2950
+F 0 "D3:2" H 6025 3050 50  0000 L CNN
+F 1 "D" H 6025 2850 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6050 2950 50  0001 C CNN
+F 3 "~" V 6050 2950 50  0001 C CNN
+	1    6050 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K3:2
+U 1 1 5CC6C796
+P 6275 2700
+F 0 "K3:2" H 6275 2800 50  0000 L CNN
+F 1 "MX_1U" H 6275 2640 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6275 2900 50  0001 C CNN
+F 3 "~" H 6275 2900 50  0001 C CNN
+	1    6275 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 3050 6050 3050
+Connection ~ 5850 2700
+Connection ~ 5225 2700
+Wire Wire Line
+	5425 2700 5425 2850
+Wire Wire Line
+	5450 2700 5425 2700
+$Comp
+L Device:D_Small D3:1
+U 1 1 5CC6C788
+P 5425 2950
+F 0 "D3:1" H 5400 3050 50  0000 L CNN
+F 1 "D" H 5400 2850 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 5425 2950 50  0001 C CNN
+F 3 "~" V 5425 2950 50  0001 C CNN
+	1    5425 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K3:1
+U 1 1 5CC6C782
+P 5650 2700
+F 0 "K3:1" H 5650 2800 50  0000 L CNN
+F 1 "MX_1U" H 5650 2640 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5650 2900 50  0001 C CNN
+F 3 "~" H 5650 2900 50  0001 C CNN
+	1    5650 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 3050
+Wire Wire Line
+	4800 3050 5425 3050
+Wire Wire Line
+	4600 3050 4800 3050
+Text GLabel 4600 3050 0    50   Input ~ 0
+row3
+Wire Wire Line
+	4800 2700 4800 2850
+Wire Wire Line
+	4825 2700 4800 2700
+$Comp
+L Device:D_Small D3:0
+U 1 1 5CC6C775
+P 4800 2950
+F 0 "D3:0" H 4775 3050 50  0000 L CNN
+F 1 "D" H 4775 2850 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 4800 2950 50  0001 C CNN
+F 3 "~" V 4800 2950 50  0001 C CNN
+	1    4800 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K3:0
+U 1 1 5CC6C76F
+P 5025 2700
+F 0 "K3:0" H 5025 2800 50  0000 L CNN
+F 1 "MX_1U" H 5025 2640 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5025 2900 50  0001 C CNN
+F 3 "~" H 5025 2900 50  0001 C CNN
+	1    5025 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 1600 8975 2150
+Wire Wire Line
+	8350 1600 8350 2150
+Wire Wire Line
+	7725 1600 7725 2150
+Wire Wire Line
+	7100 1600 7100 2150
+Wire Wire Line
+	6475 1600 6475 2150
+Wire Wire Line
+	5850 1600 5850 2150
+Wire Wire Line
+	5225 1600 5225 2150
+Connection ~ 8975 2150
+Wire Wire Line
+	8550 2150 8550 2300
+Wire Wire Line
+	8575 2150 8550 2150
+$Comp
+L Device:D_Small D2:6
+U 1 1 5CC627FC
+P 8550 2400
+F 0 "D2:6" H 8525 2500 50  0000 L CNN
+F 1 "D" H 8525 2300 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 8550 2400 50  0001 C CNN
+F 3 "~" V 8550 2400 50  0001 C CNN
+	1    8550 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K2:6
+U 1 1 5CC627F6
+P 8775 2150
+F 0 "K2:6" H 8775 2250 50  0000 L CNN
+F 1 "MX_1U" H 8775 2090 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8775 2350 50  0001 C CNN
+F 3 "~" H 8775 2350 50  0001 C CNN
+	1    8775 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7925 2500
+Wire Wire Line
+	7925 2500 8550 2500
+Connection ~ 8350 2150
+Wire Wire Line
+	7925 2150 7925 2300
+Wire Wire Line
+	7950 2150 7925 2150
+$Comp
+L Device:D_Small D2:5
+U 1 1 5CC627E9
+P 7925 2400
+F 0 "D2:5" H 7900 2500 50  0000 L CNN
+F 1 "D" H 7900 2300 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7925 2400 50  0001 C CNN
+F 3 "~" V 7925 2400 50  0001 C CNN
+	1    7925 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K2:5
+U 1 1 5CC627E3
+P 8150 2150
+F 0 "K2:5" H 8150 2250 50  0000 L CNN
+F 1 "MX_1U" H 8150 2090 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8150 2350 50  0001 C CNN
+F 3 "~" H 8150 2350 50  0001 C CNN
+	1    8150 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 2500
+Wire Wire Line
+	7300 2500 7925 2500
+Connection ~ 7725 2150
+Wire Wire Line
+	7300 2150 7300 2300
+Wire Wire Line
+	7325 2150 7300 2150
+$Comp
+L Device:D_Small D2:4
+U 1 1 5CC627D6
+P 7300 2400
+F 0 "D2:4" H 7275 2500 50  0000 L CNN
+F 1 "D" H 7275 2300 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7300 2400 50  0001 C CNN
+F 3 "~" V 7300 2400 50  0001 C CNN
+	1    7300 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K2:4
+U 1 1 5CC627D0
+P 7525 2150
+F 0 "K2:4" H 7525 2250 50  0000 L CNN
+F 1 "MX_1U" H 7525 2090 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7525 2350 50  0001 C CNN
+F 3 "~" H 7525 2350 50  0001 C CNN
+	1    7525 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 2500
+Connection ~ 6675 2500
+Wire Wire Line
+	6675 2500 7300 2500
+Connection ~ 7100 2150
+Wire Wire Line
+	6675 2150 6675 2300
+Wire Wire Line
+	6700 2150 6675 2150
+$Comp
+L Device:D_Small D2:3
+U 1 1 5CC627C2
+P 6675 2400
+F 0 "D2:3" H 6650 2500 50  0000 L CNN
+F 1 "D" H 6650 2300 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6675 2400 50  0001 C CNN
+F 3 "~" V 6675 2400 50  0001 C CNN
+	1    6675 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K2:3
+U 1 1 5CC627BC
+P 6900 2150
+F 0 "K2:3" H 6900 2250 50  0000 L CNN
+F 1 "MX_1U" H 6900 2090 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6900 2350 50  0001 C CNN
+F 3 "~" H 6900 2350 50  0001 C CNN
+	1    6900 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2500 6675 2500
+Connection ~ 5425 2500
+Connection ~ 6475 2150
+Wire Wire Line
+	6050 2150 6050 2300
+Wire Wire Line
+	6075 2150 6050 2150
+$Comp
+L Device:D_Small D2:2
+U 1 1 5CC627AF
+P 6050 2400
+F 0 "D2:2" H 6025 2500 50  0000 L CNN
+F 1 "D" H 6025 2300 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6050 2400 50  0001 C CNN
+F 3 "~" V 6050 2400 50  0001 C CNN
+	1    6050 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K2:2
+U 1 1 5CC627A9
+P 6275 2150
+F 0 "K2:2" H 6275 2250 50  0000 L CNN
+F 1 "MX_1U" H 6275 2090 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6275 2350 50  0001 C CNN
+F 3 "~" H 6275 2350 50  0001 C CNN
+	1    6275 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 2500 6050 2500
+Connection ~ 5850 2150
+Connection ~ 5225 2150
+Wire Wire Line
+	5425 2150 5425 2300
+Wire Wire Line
+	5450 2150 5425 2150
+$Comp
+L Device:D_Small D2:1
+U 1 1 5CC6279B
+P 5425 2400
+F 0 "D2:1" H 5400 2500 50  0000 L CNN
+F 1 "D" H 5400 2300 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 5425 2400 50  0001 C CNN
+F 3 "~" V 5425 2400 50  0001 C CNN
+	1    5425 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K2:1
+U 1 1 5CC62795
+P 5650 2150
+F 0 "K2:1" H 5650 2250 50  0000 L CNN
+F 1 "MX_1U" H 5650 2090 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5650 2350 50  0001 C CNN
+F 3 "~" H 5650 2350 50  0001 C CNN
+	1    5650 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 2500
+Wire Wire Line
+	4800 2500 5425 2500
+Wire Wire Line
+	4600 2500 4800 2500
+Text GLabel 4600 2500 0    50   Input ~ 0
+row2
+Wire Wire Line
+	4800 2150 4800 2300
+Wire Wire Line
+	4825 2150 4800 2150
+$Comp
+L Device:D_Small D2:0
+U 1 1 5CC62788
+P 4800 2400
+F 0 "D2:0" H 4775 2500 50  0000 L CNN
+F 1 "D" H 4775 2300 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 4800 2400 50  0001 C CNN
+F 3 "~" V 4800 2400 50  0001 C CNN
+	1    4800 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K2:0
+U 1 1 5CC62782
+P 5025 2150
+F 0 "K2:0" H 5025 2250 50  0000 L CNN
+F 1 "MX_1U" H 5025 2090 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5025 2350 50  0001 C CNN
+F 3 "~" H 5025 2350 50  0001 C CNN
+	1    5025 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 1050 8975 1600
+Wire Wire Line
+	8350 1050 8350 1600
+Wire Wire Line
+	7725 1050 7725 1600
+Wire Wire Line
+	7100 1050 7100 1600
+Wire Wire Line
+	6475 1050 6475 1600
+Wire Wire Line
+	5850 1050 5850 1600
+Wire Wire Line
+	5225 1050 5225 1600
+Connection ~ 8975 1600
+Wire Wire Line
+	8550 1600 8550 1750
+Wire Wire Line
+	8575 1600 8550 1600
+$Comp
+L Device:D_Small D1:6
+U 1 1 5CC5875F
+P 8550 1850
+F 0 "D1:6" H 8525 1950 50  0000 L CNN
+F 1 "D" H 8525 1750 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 8550 1850 50  0001 C CNN
+F 3 "~" V 8550 1850 50  0001 C CNN
+	1    8550 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K1:6
+U 1 1 5CC58759
+P 8775 1600
+F 0 "K1:6" H 8775 1700 50  0000 L CNN
+F 1 "MX_1U" H 8775 1540 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8775 1800 50  0001 C CNN
+F 3 "~" H 8775 1800 50  0001 C CNN
+	1    8775 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7925 1950
+Wire Wire Line
+	7925 1950 8550 1950
+Connection ~ 8350 1600
+Wire Wire Line
+	7925 1600 7925 1750
+Wire Wire Line
+	7950 1600 7925 1600
+$Comp
+L Device:D_Small D1:5
+U 1 1 5CC5874C
+P 7925 1850
+F 0 "D1:5" H 7900 1950 50  0000 L CNN
+F 1 "D" H 7900 1750 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7925 1850 50  0001 C CNN
+F 3 "~" V 7925 1850 50  0001 C CNN
+	1    7925 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K1:5
+U 1 1 5CC58746
+P 8150 1600
+F 0 "K1:5" H 8150 1700 50  0000 L CNN
+F 1 "MX_1U" H 8150 1540 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8150 1800 50  0001 C CNN
+F 3 "~" H 8150 1800 50  0001 C CNN
+	1    8150 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 1950
+Wire Wire Line
+	7300 1950 7925 1950
+Connection ~ 7725 1600
+Wire Wire Line
+	7300 1600 7300 1750
+Wire Wire Line
+	7325 1600 7300 1600
+$Comp
+L Device:D_Small D1:4
+U 1 1 5CC58739
+P 7300 1850
+F 0 "D1:4" H 7275 1950 50  0000 L CNN
+F 1 "D" H 7275 1750 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7300 1850 50  0001 C CNN
+F 3 "~" V 7300 1850 50  0001 C CNN
+	1    7300 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K1:4
+U 1 1 5CC58733
+P 7525 1600
+F 0 "K1:4" H 7525 1700 50  0000 L CNN
+F 1 "MX_1U" H 7525 1540 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7525 1800 50  0001 C CNN
+F 3 "~" H 7525 1800 50  0001 C CNN
+	1    7525 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 1950
+Connection ~ 6675 1950
+Wire Wire Line
+	6675 1950 7300 1950
+Connection ~ 7100 1600
+Wire Wire Line
+	6675 1600 6675 1750
+Wire Wire Line
+	6700 1600 6675 1600
+$Comp
+L Device:D_Small D1:3
+U 1 1 5CC58725
+P 6675 1850
+F 0 "D1:3" H 6650 1950 50  0000 L CNN
+F 1 "D" H 6650 1750 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6675 1850 50  0001 C CNN
+F 3 "~" V 6675 1850 50  0001 C CNN
+	1    6675 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K1:3
+U 1 1 5CC5871F
+P 6900 1600
+F 0 "K1:3" H 6900 1700 50  0000 L CNN
+F 1 "MX_1U" H 6900 1540 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6900 1800 50  0001 C CNN
+F 3 "~" H 6900 1800 50  0001 C CNN
+	1    6900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1950 6675 1950
+Connection ~ 5425 1950
+Connection ~ 6475 1600
+Wire Wire Line
+	6050 1600 6050 1750
+Wire Wire Line
+	6075 1600 6050 1600
+$Comp
+L Device:D_Small D1:2
+U 1 1 5CC58712
+P 6050 1850
+F 0 "D1:2" H 6025 1950 50  0000 L CNN
+F 1 "D" H 6025 1750 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6050 1850 50  0001 C CNN
+F 3 "~" V 6050 1850 50  0001 C CNN
+	1    6050 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K1:2
+U 1 1 5CC5870C
+P 6275 1600
+F 0 "K1:2" H 6275 1700 50  0000 L CNN
+F 1 "MX_1U" H 6275 1540 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6275 1800 50  0001 C CNN
+F 3 "~" H 6275 1800 50  0001 C CNN
+	1    6275 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 1950 6050 1950
+Connection ~ 5850 1600
+Connection ~ 5225 1600
+Wire Wire Line
+	5425 1600 5425 1750
+Wire Wire Line
+	5450 1600 5425 1600
+$Comp
+L Device:D_Small D1:1
+U 1 1 5CC586FE
+P 5425 1850
+F 0 "D1:1" H 5400 1950 50  0000 L CNN
+F 1 "D" H 5400 1750 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 5425 1850 50  0001 C CNN
+F 3 "~" V 5425 1850 50  0001 C CNN
+	1    5425 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K1:1
+U 1 1 5CC586F8
+P 5650 1600
+F 0 "K1:1" H 5650 1700 50  0000 L CNN
+F 1 "MX_1U" H 5650 1540 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5650 1800 50  0001 C CNN
+F 3 "~" H 5650 1800 50  0001 C CNN
+	1    5650 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 1950
+Wire Wire Line
+	4800 1950 5425 1950
+Wire Wire Line
+	4600 1950 4800 1950
+Text GLabel 4600 1950 0    50   Input ~ 0
+row1
+Wire Wire Line
+	4800 1600 4800 1750
+Wire Wire Line
+	4825 1600 4800 1600
+$Comp
+L Device:D_Small D1:0
+U 1 1 5CC586EB
+P 4800 1850
+F 0 "D1:0" H 4775 1950 50  0000 L CNN
+F 1 "D" H 4775 1750 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 4800 1850 50  0001 C CNN
+F 3 "~" V 4800 1850 50  0001 C CNN
+	1    4800 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K1:0
+U 1 1 5CC586E5
+P 5025 1600
+F 0 "K1:0" H 5025 1700 50  0000 L CNN
+F 1 "MX_1U" H 5025 1540 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5025 1800 50  0001 C CNN
+F 3 "~" H 5025 1800 50  0001 C CNN
+	1    5025 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 8975 1050
+Text GLabel 8875 725  0    50   Input ~ 0
+col6
+Wire Wire Line
+	8975 725  8875 725 
+Wire Wire Line
+	8975 1050 8975 725 
+Wire Wire Line
+	8550 1050 8550 1200
+Wire Wire Line
+	8575 1050 8550 1050
+$Comp
+L Device:D_Small D0:6
+U 1 1 5CC1B840
+P 8550 1300
+F 0 "D0:6" H 8525 1400 50  0000 L CNN
+F 1 "D" H 8525 1200 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 8550 1300 50  0001 C CNN
+F 3 "~" V 8550 1300 50  0001 C CNN
+	1    8550 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K0:6
+U 1 1 5CC1B83A
+P 8775 1050
+F 0 "K0:6" H 8775 1150 50  0000 L CNN
+F 1 "MX_1U" H 8775 990 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8775 1250 50  0001 C CNN
+F 3 "~" H 8775 1250 50  0001 C CNN
+	1    8775 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7925 1400
+Wire Wire Line
+	7925 1400 8550 1400
+Connection ~ 8350 1050
+Text GLabel 8250 725  0    50   Input ~ 0
+col5
+Wire Wire Line
+	8350 725  8250 725 
+Wire Wire Line
+	8350 1050 8350 725 
+Wire Wire Line
+	7925 1050 7925 1200
+Wire Wire Line
+	7950 1050 7925 1050
+$Comp
+L Device:D_Small D0:5
+U 1 1 5CC1A68B
+P 7925 1300
+F 0 "D0:5" H 7900 1400 50  0000 L CNN
+F 1 "D" H 7900 1200 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7925 1300 50  0001 C CNN
+F 3 "~" V 7925 1300 50  0001 C CNN
+	1    7925 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K0:5
+U 1 1 5CC1A685
+P 8150 1050
+F 0 "K0:5" H 8150 1150 50  0000 L CNN
+F 1 "MX_1U" H 8150 990 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 8150 1250 50  0001 C CNN
+F 3 "~" H 8150 1250 50  0001 C CNN
+	1    8150 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 1400
+Wire Wire Line
+	7300 1400 7925 1400
+Connection ~ 7725 1050
+Text GLabel 7625 725  0    50   Input ~ 0
+col4
+Wire Wire Line
+	7725 725  7625 725 
+Wire Wire Line
+	7725 1050 7725 725 
+Wire Wire Line
+	7300 1050 7300 1200
+Wire Wire Line
+	7325 1050 7300 1050
+$Comp
+L Device:D_Small D0:4
+U 1 1 5CC18161
+P 7300 1300
+F 0 "D0:4" H 7275 1400 50  0000 L CNN
+F 1 "D" H 7275 1200 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 7300 1300 50  0001 C CNN
+F 3 "~" V 7300 1300 50  0001 C CNN
+	1    7300 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K0:4
+U 1 1 5CC1815B
+P 7525 1050
+F 0 "K0:4" H 7525 1150 50  0000 L CNN
+F 1 "MX_1U" H 7525 990 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 7525 1250 50  0001 C CNN
+F 3 "~" H 7525 1250 50  0001 C CNN
+	1    7525 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 1400
+Connection ~ 6675 1400
+Wire Wire Line
+	6675 1400 7300 1400
+Connection ~ 7100 1050
+Text GLabel 7000 725  0    50   Input ~ 0
+col3
+Wire Wire Line
+	7100 725  7000 725 
+Wire Wire Line
+	7100 1050 7100 725 
+Wire Wire Line
+	6675 1050 6675 1200
+Wire Wire Line
+	6700 1050 6675 1050
+$Comp
+L Device:D_Small D0:3
+U 1 1 5CC14ED9
+P 6675 1300
+F 0 "D0:3" H 6650 1400 50  0000 L CNN
+F 1 "D" H 6650 1200 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6675 1300 50  0001 C CNN
+F 3 "~" V 6675 1300 50  0001 C CNN
+	1    6675 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K0:3
+U 1 1 5CC14ECF
+P 6900 1050
+F 0 "K0:3" H 6900 1150 50  0000 L CNN
+F 1 "MX_1U" H 6900 990 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6900 1250 50  0001 C CNN
+F 3 "~" H 6900 1250 50  0001 C CNN
+	1    6900 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1400 6675 1400
+Connection ~ 5425 1400
+Connection ~ 6475 1050
+Text GLabel 6375 725  0    50   Input ~ 0
+col2
+Wire Wire Line
+	6475 725  6375 725 
+Wire Wire Line
+	6475 1050 6475 725 
+Wire Wire Line
+	6050 1050 6050 1200
+Wire Wire Line
+	6075 1050 6050 1050
+$Comp
+L Device:D_Small D0:2
+U 1 1 5CC131C0
+P 6050 1300
+F 0 "D0:2" H 6025 1400 50  0000 L CNN
+F 1 "D" H 6025 1200 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 6050 1300 50  0001 C CNN
+F 3 "~" V 6050 1300 50  0001 C CNN
+	1    6050 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K0:2
+U 1 1 5CC131B6
+P 6275 1050
+F 0 "K0:2" H 6275 1150 50  0000 L CNN
+F 1 "MX_1U" H 6275 990 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6275 1250 50  0001 C CNN
+F 3 "~" H 6275 1250 50  0001 C CNN
+	1    6275 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 1400 6050 1400
+Connection ~ 5850 1050
+Connection ~ 5225 1050
+Text GLabel 5750 725  0    50   Input ~ 0
+col1
+Wire Wire Line
+	5850 725  5750 725 
+Wire Wire Line
+	5850 1050 5850 725 
+Wire Wire Line
+	5450 1050 5425 1050
+$Comp
+L Device:D_Small D0:1
+U 1 1 5CC0E026
+P 5425 1300
+F 0 "D0:1" H 5400 1400 50  0000 L CNN
+F 1 "D" H 5400 1200 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 5425 1300 50  0001 C CNN
+F 3 "~" V 5425 1300 50  0001 C CNN
+	1    5425 1300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4800 1400
+Wire Wire Line
+	4800 1400 5425 1400
+Wire Wire Line
+	4600 1400 4800 1400
+Text GLabel 4600 1400 0    50   Input ~ 0
+row0
+Text GLabel 5125 725  0    50   Input ~ 0
+col0
+Wire Wire Line
+	5225 725  5125 725 
+Wire Wire Line
+	5225 1050 5225 725 
+Wire Wire Line
+	4800 1050 4800 1200
+$Comp
+L Device:D_Small D0:0
+U 1 1 5CC0BAB2
+P 4800 1300
+F 0 "D0:0" H 4775 1400 50  0000 L CNN
+F 1 "D" H 4775 1200 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 4800 1300 50  0001 C CNN
+F 3 "~" V 4800 1300 50  0001 C CNN
+	1    4800 1300
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	9225 3900 9225 600 
+Wire Notes Line
+	575  600  9225 600 
+Text Notes 4150 700  0    50   ~ 0
+Switch Matrix
+Text GLabel 2125 4075 2    50   Input ~ 0
+RGB
+$Sheet
+S 4475 4175 1325 875 
+U 5CCE7907
+F0 "RGB" 50
+F1 "RGB.sch" 50
+$EndSheet
+Text Notes 4175 4000 0    50   ~ 0
+RGB LED Array
+Wire Notes Line
+	6150 5375 6150 3900
+$Comp
+L power:GND #PWR0119
+U 1 1 5D731AC0
+P 5575 5950
+F 0 "#PWR0119" H 5575 5700 50  0001 C CNN
+F 1 "GND" H 5575 5800 50  0000 C CNN
+F 2 "" H 5575 5950 50  0001 C CNN
+F 3 "" H 5575 5950 50  0001 C CNN
+	1    5575 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5850 5575 5850
+Wire Wire Line
+	5575 5850 5575 5950
+Text GLabel 5700 5750 0    50   Input ~ 0
+BUZZER
+Wire Notes Line
+	6225 5375 6225 7625
+Text Notes 5225 5475 0    50   ~ 0
+Buzzer
+$Comp
+L power:+5V #PWR0109
+U 1 1 5CD4D75E
+P 4475 5850
+F 0 "#PWR0109" H 4475 5700 50  0001 C CNN
+F 1 "+5V" H 4475 5990 50  0000 C CNN
+F 2 "" H 4475 5850 50  0001 C CNN
+F 3 "" H 4475 5850 50  0001 C CNN
+	1    4475 5850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 4300
+$Comp
+L Connector_Generic:Conn_01x01 M2
+U 1 1 5CD3F796
+P 6550 4600
+F 0 "M2" H 6550 4700 50  0000 C CNN
+F 1 "Conn_01x01" H 6550 4500 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 6550 4600 50  0001 C CNN
+F 3 "~" H 6550 4600 50  0001 C CNN
+	1    6550 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 4600
+$Comp
+L Connector_Generic:Conn_01x01 M3
+U 1 1 5CD4F4EC
+P 6550 4900
+F 0 "M3" H 6550 5000 50  0000 C CNN
+F 1 "Conn_01x01" H 6550 4800 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 6550 4900 50  0001 C CNN
+F 3 "~" H 6550 4900 50  0001 C CNN
+	1    6550 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 4900
+$Comp
+L Connector_Generic:Conn_01x01 M6
+U 1 1 5CD5F1B2
+P 7050 4900
+F 0 "M6" H 7050 5000 50  0000 C CNN
+F 1 "Conn_01x01" H 7050 4800 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 7050 4900 50  0001 C CNN
+F 3 "~" H 7050 4900 50  0001 C CNN
+	1    7050 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6850 4900
+$Comp
+L Connector_Generic:Conn_01x01 M5
+U 1 1 5CD6EE6C
+P 7050 4600
+F 0 "M5" H 7050 4700 50  0000 C CNN
+F 1 "Conn_01x01" H 7050 4500 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 7050 4600 50  0001 C CNN
+F 3 "~" H 7050 4600 50  0001 C CNN
+	1    7050 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6850 4600
+$Comp
+L Connector_Generic:Conn_01x01 M4
+U 1 1 5CD7EBA8
+P 7050 4300
+F 0 "M4" H 7050 4400 50  0000 C CNN
+F 1 "Conn_01x01" H 7050 4200 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 7050 4300 50  0001 C CNN
+F 3 "~" H 7050 4300 50  0001 C CNN
+	1    7050 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6850 4300
+$Comp
+L Connector_Generic:Conn_01x01 M7
+U 1 1 5CDA5EE4
+P 7550 4300
+F 0 "M7" H 7550 4400 50  0000 C CNN
+F 1 "Conn_01x01" H 7550 4200 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 7550 4300 50  0001 C CNN
+F 3 "~" H 7550 4300 50  0001 C CNN
+	1    7550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6075 2750 7350
+Wire Wire Line
+	3900 6750 3825 6750
+Wire Wire Line
+	3900 6750 3900 6850
+$Comp
+L power:GND #PWR0117
+U 1 1 5D3BD94D
+P 3900 6850
+F 0 "#PWR0117" H 3900 6600 50  0001 C CNN
+F 1 "GND" H 3900 6700 50  0000 C CNN
+F 2 "" H 3900 6850 50  0001 C CNN
+F 3 "" H 3900 6850 50  0001 C CNN
+	1    3900 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6625 2650 6750
+$Comp
+L power:VCC #PWR0118
+U 1 1 5D3BE33F
+P 2650 6625
+F 0 "#PWR0118" H 2650 6475 50  0001 C CNN
+F 1 "VCC" H 2650 6775 50  0000 C CNN
+F 2 "" H 2650 6625 50  0001 C CNN
+F 3 "" H 2650 6625 50  0001 C CNN
+	1    2650 6625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 6750 2650 6750
+Text GLabel 2125 2875 2    50   Input ~ 0
+col6
+Text GLabel 2125 2775 2    50   Input ~ 0
+row4
+Text GLabel 2125 2975 2    50   Input ~ 0
+col0
+Text GLabel 2125 3075 2    50   Input ~ 0
+col1
+Text GLabel 2125 1575 2    50   Input ~ 0
+col2
+Text GLabel 2125 1675 2    50   Input ~ 0
+col3
+Text GLabel 2125 1775 2    50   Input ~ 0
+col4
+NoConn ~ 2125 2075
+Text GLabel 2125 3875 2    50   Input ~ 0
+row0
+Text GLabel 2125 3675 2    50   Input ~ 0
+row2
+Text GLabel 2125 3575 2    50   Input ~ 0
+row3
+Text GLabel 2125 3975 2    50   Input ~ 0
+col5
+Text GLabel 2125 2575 2    50   Input ~ 0
+BUZZER
+NoConn ~ 2125 2675
+$Comp
+L Connector:AVR-ISP-6 ISP1
+U 1 1 5D698103
+P 4450 7000
+F 0 "ISP1" H 4450 7400 50  0000 L CNN
+F 1 "AVR-ISP-6-PIN" H 4375 6700 50  0000 L CNN
+F 2 "MechLlama:PinHeader_1x06_P2.54mm_Vertical_ISP" V 4200 7050 50  0001 C CNN
+F 3 " ~" H 3175 6450 50  0001 C CNN
+	1    4450 7000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7350 4300
+$Comp
+L Device:R R6
+U 1 1 5CC6D865
+P 3600 5875
+F 0 "R6" V 3500 5825 50  0000 L CNN
+F 1 "22" V 3600 5825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3600 5875 50  0001 C CNN
+F 3 "~" H 3600 5875 50  0001 C CNN
+	1    3600 5875
+	0    1    1    0   
+$EndComp
+Text Label 2550 6075 0    50   ~ 0
+DR+
+Text Label 2550 5875 0    50   ~ 0
+DR-
+Wire Notes Line
+	7975 5375 7975 3900
+Text Notes 6200 4000 0    50   ~ 0
+Mounting Holes
+$Comp
+L Device:C_Small C6
+U 1 1 5CD4E441
+P 2975 1375
+F 0 "C6" H 2985 1445 50  0000 L CNN
+F 1 "22pF" H 2985 1295 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2975 1375 50  0001 C CNN
+F 3 "~" H 2975 1375 50  0001 C CNN
+	1    2975 1375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5CCF9581
+P 3325 1525
+F 0 "Y1" V 3279 1769 50  0000 L CNN
+F 1 "16MHz" V 3370 1769 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3325 1525 50  0001 C CNN
+F 3 "~" H 3325 1525 50  0001 C CNN
+	1    3325 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5CD4E855
+P 2975 1675
+F 0 "C7" H 2985 1745 50  0000 L CNN
+F 1 "22pF" H 2985 1595 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2975 1675 50  0001 C CNN
+F 3 "~" H 2975 1675 50  0001 C CNN
+	1    2975 1675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CE44EE2
+P 3400 2800
+F 0 "R5" V 3325 2750 50  0000 L CNN
+F 1 "4.7k" V 3400 2725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3400 2800 50  0001 C CNN
+F 3 "~" H 3400 2800 50  0001 C CNN
+	1    3400 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CC9C131
+P 3425 3525
+F 0 "SW1" H 3450 3625 50  0000 L CNN
+F 1 "SW_Push" H 3425 3465 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 3425 3725 50  0001 C CNN
+F 3 "~" H 3425 3725 50  0001 C CNN
+	1    3425 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5CFC981F
+P 2900 4300
+F 0 "C3" H 2910 4370 50  0000 L CNN
+F 1 "0.1uF" H 2910 4220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2900 4300 50  0001 C CNN
+F 3 "~" H 2900 4300 50  0001 C CNN
+	1    2900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5CFBC379
+P 2650 4300
+F 0 "C2" H 2660 4370 50  0000 L CNN
+F 1 "0.1uF" H 2660 4220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2650 4300 50  0001 C CNN
+F 3 "~" H 2650 4300 50  0001 C CNN
+	1    2650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:PRTR5V0U2X U2
+U 1 1 5D126AC9
+P 3325 6750
+F 0 "U2" V 3675 6500 50  0000 C CNN
+F 1 "PRTR5V0U2X" V 3075 6750 50  0000 C CNN
+F 2 "MechLlama:SOT-143B" H 3385 6750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 3385 6750 50  0001 C CNN
+	1    3325 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MechLlama:USB_C_Receptacle_USB2.0-ReducedPins J1
+U 1 1 5D06BB50
+P 1775 5925
+F 0 "J1" H 1375 6675 50  0000 L CNN
+F 1 "USB_C_Receptacle_USB2.0-ReducedPins" V 1325 6675 50  0000 R CNN
+F 2 "MechLlama:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1925 5925 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1925 5925 50  0001 C CNN
+	1    1775 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker B1
+U 1 1 5D72085E
+P 5900 5750
+F 0 "B1" H 5950 5975 50  0000 R CNN
+F 1 "Buzzer" H 5950 5900 50  0000 R CNN
+F 2 "MechLlama:Buzzer_SMD_KLJ-1102_11x9" H 5900 5550 50  0001 C CNN
+F 3 "~" H 5890 5700 50  0001 C CNN
+	1    5900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5CCA059C
+P 2950 6075
+F 0 "R7" V 2850 6025 50  0000 L CNN
+F 1 "22" V 2950 6025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2950 6075 50  0001 C CNN
+F 3 "~" H 2950 6075 50  0001 C CNN
+	1    2950 6075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5CCBF11D
+P 3175 3300
+F 0 "R8" H 3025 3300 50  0000 L CNN
+F 1 "10k" V 3175 3225 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3175 3300 50  0001 C CNN
+F 3 "~" H 3175 3300 50  0001 C CNN
+	1    3175 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR025
+U 1 1 5CCC0F95
+P 3175 3150
+F 0 "#PWR025" H 3175 3000 50  0001 C CNN
+F 1 "+5V" H 3175 3290 50  0000 C CNN
+F 2 "" H 3175 3150 50  0001 C CNN
+F 3 "" H 3175 3150 50  0001 C CNN
+	1    3175 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3175 3450 3175 3525
+Connection ~ 3175 3525
+Wire Wire Line
+	3175 3525 3225 3525
+$Comp
+L Connector_Generic:Conn_01x01 M1
+U 1 1 5CD2E2DA
+P 6550 4300
+F 0 "M1" H 6550 4400 50  0000 C CNN
+F 1 "Conn_01x01" H 6550 4200 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 6550 4300 50  0001 C CNN
+F 3 "~" H 6550 4300 50  0001 C CNN
+	1    6550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 ISP2
+U 1 1 5D70C112
+P 5525 7000
+F 0 "ISP2" H 5525 7400 50  0000 L CNN
+F 1 "AVR-ISP-6-TAG" H 5450 6700 50  0000 L CNN
+F 2 "MechLlama:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" V 5275 7050 50  0001 C CNN
+F 3 " ~" H 4250 6450 50  0001 C CNN
+	1    5525 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5D0B7A41
+P 3400 4300
+F 0 "C5" H 3410 4370 50  0000 L CNN
+F 1 "0.1uF" H 3410 4220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3400 4300 50  0001 C CNN
+F 3 "~" H 3400 4300 50  0001 C CNN
+	1    3400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4175 3400 4175
+Wire Wire Line
+	3400 4175 3400 4200
+Wire Wire Line
+	3400 4400 3400 4425
+Wire Wire Line
+	3400 4425 3150 4425
+Connection ~ 3150 4175
+Connection ~ 3150 4425
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:6
+U 1 1 5D24EBF5
+P 8775 3500
+F 0 "K4:6" H 8775 3600 50  0000 L CNN
+F 1 "MX_1.75U" H 8775 3440 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.75U-NoLED" H 8775 3700 50  0001 C CNN
+F 3 "~" H 8775 3700 50  0001 C CNN
+	1    8775 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 2700 8975 3100
+Wire Wire Line
+	8975 3100 9075 3100
+Wire Wire Line
+	9075 3100 9075 3250
+Wire Wire Line
+	9075 3500 8975 3500
+Connection ~ 8975 2700
+Wire Wire Line
+	9075 3250 8975 3250
+Connection ~ 9075 3250
+Wire Wire Line
+	9075 3250 9075 3500
+Wire Wire Line
+	8575 3500 8550 3500
+Wire Wire Line
+	8550 3500 8550 3400
+Wire Wire Line
+	8550 3400 8400 3400
+Wire Wire Line
+	8575 3250 8550 3250
+Wire Wire Line
+	8550 3250 8550 3400
+Connection ~ 8550 3400
+NoConn ~ 8200 4300
+$Comp
+L Connector_Generic:Conn_01x01 MS2
+U 1 1 5D06B312
+P 8400 4600
+F 0 "MS2" H 8400 4700 50  0000 C CNN
+F 1 "Conn_01x01" H 8400 4500 50  0000 C CNN
+F 2 "MechLlama:MountingHole_4.5mm_SpacerThrough" H 8400 4600 50  0001 C CNN
+F 3 "~" H 8400 4600 50  0001 C CNN
+	1    8400 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8200 4600
+$Comp
+L Connector_Generic:Conn_01x01 MS3
+U 1 1 5D06B319
+P 8400 4900
+F 0 "MS3" H 8400 5000 50  0000 C CNN
+F 1 "Conn_01x01" H 8400 4800 50  0000 C CNN
+F 2 "MechLlama:MountingHole_4.5mm_SpacerThrough" H 8400 4900 50  0001 C CNN
+F 3 "~" H 8400 4900 50  0001 C CNN
+	1    8400 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8200 4900
+$Comp
+L Connector_Generic:Conn_01x01 MS6
+U 1 1 5D06B320
+P 8900 4900
+F 0 "MS6" H 8900 5000 50  0000 C CNN
+F 1 "Conn_01x01" H 8900 4800 50  0000 C CNN
+F 2 "MechLlama:MountingHole_4.5mm_SpacerThrough" H 8900 4900 50  0001 C CNN
+F 3 "~" H 8900 4900 50  0001 C CNN
+	1    8900 4900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 4900
+$Comp
+L Connector_Generic:Conn_01x01 MS5
+U 1 1 5D06B327
+P 8900 4600
+F 0 "MS5" H 8900 4700 50  0000 C CNN
+F 1 "Conn_01x01" H 8900 4500 50  0000 C CNN
+F 2 "MechLlama:MountingHole_4.5mm_SpacerThrough" H 8900 4600 50  0001 C CNN
+F 3 "~" H 8900 4600 50  0001 C CNN
+	1    8900 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 4600
+$Comp
+L Connector_Generic:Conn_01x01 MS4
+U 1 1 5D06B32E
+P 8900 4300
+F 0 "MS4" H 8900 4400 50  0000 C CNN
+F 1 "Conn_01x01" H 8900 4200 50  0000 C CNN
+F 2 "MechLlama:MountingHole_4.5mm_SpacerThrough" H 8900 4300 50  0001 C CNN
+F 3 "~" H 8900 4300 50  0001 C CNN
+	1    8900 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 4300
+$Comp
+L Connector_Generic:Conn_01x01 MS7
+U 1 1 5D06B335
+P 9400 4300
+F 0 "MS7" H 9400 4400 50  0000 C CNN
+F 1 "Conn_01x01" H 9400 4200 50  0000 C CNN
+F 2 "MechLlama:MountingHole_4.5mm_SpacerThrough" H 9400 4300 50  0001 C CNN
+F 3 "~" H 9400 4300 50  0001 C CNN
+	1    9400 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9200 4300
+$Comp
+L Connector_Generic:Conn_01x01 MS1
+U 1 1 5D06B33C
+P 8400 4300
+F 0 "MS1" H 8400 4400 50  0000 C CNN
+F 1 "Conn_01x01" H 8400 4200 50  0000 C CNN
+F 2 "MechLlama:MountingHole_4.5mm_SpacerThrough" H 8400 4300 50  0001 C CNN
+F 3 "~" H 8400 4300 50  0001 C CNN
+	1    8400 4300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	9750 5375 9750 3900
+Wire Notes Line
+	4150 3900 9750 3900
+Wire Notes Line
+	4125 5375 9750 5375
+Text Notes 8025 4000 0    50   ~ 0
+Spacer Holes
+Text Label 825  2550 0    50   ~ 0
+UCAP
+Text GLabel 2125 3775 2    50   Input ~ 0
+row1
+$Comp
+L MechLlama:SW_Push_Pin-Reversed K4:62
+U 1 1 5CC79E55
+P 8775 3250
+F 0 "K4:62" H 8775 3350 50  0000 L CNN
+F 1 "MX_1.75U" H 8775 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.75U-NoLED" H 8775 3450 50  0001 C CNN
+F 3 "~" H 8775 3450 50  0001 C CNN
+	1    8775 3250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
