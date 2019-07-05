@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 2
 Title "MechLlama G35"
-Date "2019-06-17"
-Rev "v2"
+Date "2019-07-05"
+Rev "v3"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -719,12 +719,12 @@ $EndComp
 $Comp
 L Device:D_Small D4:6
 U 1 1 5CC79E5B
-P 8400 3500
-F 0 "D4:6" H 8375 3600 50  0000 L CNN
-F 1 "D" H 8375 3400 50  0000 L CNN
-F 2 "MechLlama:D_SOD-123_Nice" V 8400 3500 50  0001 C CNN
-F 3 "~" V 8400 3500 50  0001 C CNN
-	1    8400 3500
+P 8575 3500
+F 0 "D4:6" H 8550 3600 50  0000 L CNN
+F 1 "D" H 8550 3400 50  0000 L CNN
+F 2 "MechLlama:D_SOD-123_Nice" V 8575 3500 50  0001 C CNN
+F 3 "~" V 8575 3500 50  0001 C CNN
+	1    8575 3500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -752,7 +752,7 @@ Wire Wire Line
 	5225 2700 5225 3250
 Connection ~ 7925 3600
 Wire Wire Line
-	7925 3600 8400 3600
+	7925 3600 8575 3600
 Wire Wire Line
 	7925 3250 7925 3400
 Wire Wire Line
@@ -1786,8 +1786,6 @@ F 3 "~" V 4800 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
-	9225 3900 9225 600 
-Wire Notes Line
 	575  600  9225 600 
 Text Notes 4150 700  0    50   ~ 0
 Switch Matrix
@@ -2190,39 +2188,15 @@ Connection ~ 3150 4425
 $Comp
 L MechLlama:SW_Push_Pin-Reversed K4:6
 U 1 1 5D24EBF5
-P 8775 3500
-F 0 "K4:6" H 8775 3600 50  0000 L CNN
-F 1 "MX_1.75U" H 8775 3440 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1.75U-NoLED" H 8775 3700 50  0001 C CNN
-F 3 "~" H 8775 3700 50  0001 C CNN
-	1    8775 3500
+P 8775 3250
+F 0 "K4:6" H 8775 3350 50  0000 L CNN
+F 1 "MX_1.75U" H 8775 3190 50  0000 C CNN
+F 2 "MX_Only:MXOnly-1.75U-NoLED" H 8775 3450 50  0001 C CNN
+F 3 "~" H 8775 3450 50  0001 C CNN
+	1    8775 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8975 2700 8975 3100
-Wire Wire Line
-	8975 3100 9075 3100
-Wire Wire Line
-	9075 3100 9075 3250
-Wire Wire Line
-	9075 3500 8975 3500
 Connection ~ 8975 2700
-Wire Wire Line
-	9075 3250 8975 3250
-Connection ~ 9075 3250
-Wire Wire Line
-	9075 3250 9075 3500
-Wire Wire Line
-	8575 3500 8550 3500
-Wire Wire Line
-	8550 3500 8550 3400
-Wire Wire Line
-	8550 3400 8400 3400
-Wire Wire Line
-	8575 3250 8550 3250
-Wire Wire Line
-	8550 3250 8550 3400
-Connection ~ 8550 3400
 NoConn ~ 8200 4300
 $Comp
 L Connector_Generic:Conn_01x01 MS2
@@ -2319,15 +2293,10 @@ Text Label 825  2550 0    50   ~ 0
 UCAP
 Text GLabel 2125 3775 2    50   Input ~ 0
 row1
-$Comp
-L MechLlama:SW_Push_Pin-Reversed K4:62
-U 1 1 5CC79E55
-P 8775 3250
-F 0 "K4:62" H 8775 3350 50  0000 L CNN
-F 1 "MX_1.75U" H 8775 3190 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1.75U-NoLED" H 8775 3450 50  0001 C CNN
-F 3 "~" H 8775 3450 50  0001 C CNN
-	1    8775 3250
-	1    0    0    -1  
-$EndComp
+Wire Notes Line
+	9225 3900 9225 600 
+Wire Wire Line
+	8975 2700 8975 3250
+Wire Wire Line
+	8575 3250 8575 3400
 $EndSCHEMATC
