@@ -5,3 +5,7 @@
 [submodule "PCB/libraries/MechLlama-KiCad"]
 	path = PCB/libraries/MechLlama-KiCad
 	url = https://github.com/kaylynb/MechLlama-KiCad.git
+[submodule "PCB/libraries/keyswitches.pretty"]
+	path = PCB/libraries/keyswitches.pretty
+	url = https://github.com/kaylynb/keyswitches.pretty.git
+	branch = keycaps

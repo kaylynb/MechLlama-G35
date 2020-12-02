@@ -1,196 +1,1329 @@
 EESchema Schematic File Version 4
-LIBS:G35-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 2
-Title "MechLlama G35 - RGB LEDs"
-Date "2019-05-03"
-Rev "v1"
+Sheet 3 4
+Title "MechLlama G35"
+Date "2020-12-02"
+Rev "v4"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1075 1275 0    50   Input ~ 0
-RGB
 $Comp
-L LED:WS2812B RGB?
-U 1 1 5CCF7971
-P 1700 1275
-AR Path="/5CCF7971" Ref="RGB?"  Part="0" 
-AR Path="/5CCE7907/5CCF7971" Ref="RGB1"  Part="1" 
-F 0 "RGB1" H 1900 1500 50  0000 R BNN
-F 1 "WS2812" H 1750 1050 50  0000 L TNN
-F 2 "MechLlama:LED_WS-2812B-Mini" H 1750 975 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1800 900 50  0001 L TNN
-	1    1700 1275
+L Device:LED_ABRG D?
+U 1 1 602591FA
+P 1150 1175
+AR Path="/5CCE7907/602591FA" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602591FA" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 1125 50  0001 C CNN
+F 3 "~" H 1150 1125 50  0001 C CNN
+	1    1150 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259200
+P 1150 2050
+AR Path="/5CCE7907/60259200" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259200" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 2000 50  0001 C CNN
+F 3 "~" H 1150 2000 50  0001 C CNN
+	1    1150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259206
+P 1150 2925
+AR Path="/5CCE7907/60259206" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259206" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 2875 50  0001 C CNN
+F 3 "~" H 1150 2875 50  0001 C CNN
+	1    1150 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6025920C
+P 1150 3800
+AR Path="/5CCE7907/6025920C" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6025920C" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 3750 50  0001 C CNN
+F 3 "~" H 1150 3750 50  0001 C CNN
+	1    1150 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1075 1275 1400 1275
+	950  975  725  975 
 Wire Wire Line
-	1700 875  1700 975 
+	950  1175 725  1175
+Wire Wire Line
+	950  1375 725  1375
+Text Label 725  975  0    50   ~ 0
+SW1
+Text Label 725  1175 0    50   ~ 0
+SW2
+Text Label 725  1375 0    50   ~ 0
+SW3
+Wire Wire Line
+	950  1850 725  1850
+Wire Wire Line
+	950  2050 725  2050
+Wire Wire Line
+	950  2250 725  2250
+Text Label 725  1850 0    50   ~ 0
+SW4
+Text Label 725  2050 0    50   ~ 0
+SW5
+Text Label 725  2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	950  2725 725  2725
+Wire Wire Line
+	950  2925 725  2925
+Wire Wire Line
+	950  3125 725  3125
+Text Label 725  2725 0    50   ~ 0
+SW7
+Text Label 725  2925 0    50   ~ 0
+SW8
+Text Label 725  3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	950  3600 725  3600
+Wire Wire Line
+	950  3800 725  3800
+Wire Wire Line
+	950  4000 725  4000
+Text Label 725  3600 0    50   ~ 0
+SW10
+Text Label 725  3800 0    50   ~ 0
+SW11
+Text Label 725  4000 0    50   ~ 0
+SW12
+Wire Wire Line
+	1350 1175 1450 1175
+Wire Wire Line
+	1350 3800 1450 3800
+Wire Wire Line
+	1450 3800 1450 2925
+Connection ~ 1450 1175
+Wire Wire Line
+	1350 2050 1450 2050
+Connection ~ 1450 2050
+Wire Wire Line
+	1450 2050 1450 1175
+Wire Wire Line
+	1350 2925 1450 2925
+Connection ~ 1450 2925
+Wire Wire Line
+	1450 2925 1450 2050
+Wire Wire Line
+	1450 850  1450 1175
 $Comp
-L LED:WS2812B RGB?
-U 1 1 5CD0E04C
-P 2375 1275
-AR Path="/5CD0E04C" Ref="RGB?"  Part="0" 
-AR Path="/5CCE7907/5CD0E04C" Ref="RGB2"  Part="1" 
-F 0 "RGB2" H 2575 1500 50  0000 R BNN
-F 1 "WS2812" H 2425 1050 50  0000 L TNN
-F 2 "MechLlama:LED_WS-2812B-Mini" H 2425 975 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2475 900 50  0001 L TNN
-	1    2375 1275
+L Device:LED_ABRG D?
+U 1 1 60259236
+P 2000 1175
+AR Path="/5CCE7907/60259236" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259236" Ref="D?"  Part="1" 
+F 0 "D?" H 2000 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 2000 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2000 1125 50  0001 C CNN
+F 3 "~" H 2000 1125 50  0001 C CNN
+	1    2000 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6025923C
+P 2000 2050
+AR Path="/5CCE7907/6025923C" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6025923C" Ref="D?"  Part="1" 
+F 0 "D?" H 2000 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 2000 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2000 2000 50  0001 C CNN
+F 3 "~" H 2000 2000 50  0001 C CNN
+	1    2000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259242
+P 2000 2925
+AR Path="/5CCE7907/60259242" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259242" Ref="D?"  Part="1" 
+F 0 "D?" H 2000 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 2000 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2000 2875 50  0001 C CNN
+F 3 "~" H 2000 2875 50  0001 C CNN
+	1    2000 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259248
+P 2000 3800
+AR Path="/5CCE7907/60259248" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259248" Ref="D?"  Part="1" 
+F 0 "D?" H 2000 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 2000 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2000 3750 50  0001 C CNN
+F 3 "~" H 2000 3750 50  0001 C CNN
+	1    2000 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 1275 2075 1275
+	1800 975  1575 975 
+Wire Wire Line
+	1800 1175 1575 1175
+Wire Wire Line
+	1800 1375 1575 1375
+Text Label 1575 975  0    50   ~ 0
+SW1
+Text Label 1575 1175 0    50   ~ 0
+SW2
+Text Label 1575 1375 0    50   ~ 0
+SW3
+Wire Wire Line
+	1800 1850 1575 1850
+Wire Wire Line
+	1800 2050 1575 2050
+Wire Wire Line
+	1800 2250 1575 2250
+Text Label 1575 1850 0    50   ~ 0
+SW4
+Text Label 1575 2050 0    50   ~ 0
+SW5
+Text Label 1575 2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	1800 2725 1575 2725
+Wire Wire Line
+	1800 2925 1575 2925
+Wire Wire Line
+	1800 3125 1575 3125
+Text Label 1575 2725 0    50   ~ 0
+SW7
+Text Label 1575 2925 0    50   ~ 0
+SW8
+Text Label 1575 3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	1800 3600 1575 3600
+Wire Wire Line
+	1800 3800 1575 3800
+Wire Wire Line
+	1800 4000 1575 4000
+Text Label 1575 3600 0    50   ~ 0
+SW10
+Text Label 1575 3800 0    50   ~ 0
+SW11
+Text Label 1575 4000 0    50   ~ 0
+SW12
+Wire Wire Line
+	2200 1175 2300 1175
+Wire Wire Line
+	2200 3800 2300 3800
+Wire Wire Line
+	2300 3800 2300 2925
+Wire Wire Line
+	2200 2050 2300 2050
+Connection ~ 2300 2050
+Wire Wire Line
+	2300 2050 2300 1175
+Wire Wire Line
+	2200 2925 2300 2925
+Connection ~ 2300 2925
+Wire Wire Line
+	2300 2925 2300 2050
 $Comp
-L LED:WS2812B RGB?
-U 1 1 5CD14168
-P 3050 1275
-AR Path="/5CD14168" Ref="RGB?"  Part="0" 
-AR Path="/5CCE7907/5CD14168" Ref="RGB3"  Part="1" 
-F 0 "RGB3" H 3250 1500 50  0000 R BNN
-F 1 "WS2812" H 3100 1050 50  0000 L TNN
-F 2 "MechLlama:LED_WS-2812B-Mini" H 3100 975 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3150 900 50  0001 L TNN
-	1    3050 1275
+L Device:LED_ABRG D?
+U 1 1 60259272
+P 2850 1175
+AR Path="/5CCE7907/60259272" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259272" Ref="D?"  Part="1" 
+F 0 "D?" H 2850 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 2850 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2850 1125 50  0001 C CNN
+F 3 "~" H 2850 1125 50  0001 C CNN
+	1    2850 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259278
+P 2850 2050
+AR Path="/5CCE7907/60259278" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259278" Ref="D?"  Part="1" 
+F 0 "D?" H 2850 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 2850 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2850 2000 50  0001 C CNN
+F 3 "~" H 2850 2000 50  0001 C CNN
+	1    2850 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6025927E
+P 2850 2925
+AR Path="/5CCE7907/6025927E" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6025927E" Ref="D?"  Part="1" 
+F 0 "D?" H 2850 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 2850 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2850 2875 50  0001 C CNN
+F 3 "~" H 2850 2875 50  0001 C CNN
+	1    2850 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259284
+P 2850 3800
+AR Path="/5CCE7907/60259284" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259284" Ref="D?"  Part="1" 
+F 0 "D?" H 2850 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 2850 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 2850 3750 50  0001 C CNN
+F 3 "~" H 2850 3750 50  0001 C CNN
+	1    2850 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2675 1275 2750 1275
+	2650 975  2425 975 
+Wire Wire Line
+	2650 1175 2425 1175
+Wire Wire Line
+	2650 1375 2425 1375
+Text Label 2425 975  0    50   ~ 0
+SW1
+Text Label 2425 1175 0    50   ~ 0
+SW2
+Text Label 2425 1375 0    50   ~ 0
+SW3
+Wire Wire Line
+	2650 1850 2425 1850
+Wire Wire Line
+	2650 2050 2425 2050
+Wire Wire Line
+	2650 2250 2425 2250
+Text Label 2425 1850 0    50   ~ 0
+SW4
+Text Label 2425 2050 0    50   ~ 0
+SW5
+Text Label 2425 2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	2650 2725 2425 2725
+Wire Wire Line
+	2650 2925 2425 2925
+Wire Wire Line
+	2650 3125 2425 3125
+Text Label 2425 2725 0    50   ~ 0
+SW7
+Text Label 2425 2925 0    50   ~ 0
+SW8
+Text Label 2425 3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	2650 3600 2425 3600
+Wire Wire Line
+	2650 3800 2425 3800
+Wire Wire Line
+	2650 4000 2425 4000
+Text Label 2425 3600 0    50   ~ 0
+SW10
+Text Label 2425 3800 0    50   ~ 0
+SW11
+Text Label 2425 4000 0    50   ~ 0
+SW12
+Wire Wire Line
+	3050 1175 3150 1175
+Wire Wire Line
+	3050 3800 3150 3800
+Wire Wire Line
+	3150 3800 3150 2925
+Wire Wire Line
+	3050 2050 3150 2050
+Connection ~ 3150 2050
+Wire Wire Line
+	3150 2050 3150 1175
+Wire Wire Line
+	3050 2925 3150 2925
+Connection ~ 3150 2925
+Wire Wire Line
+	3150 2925 3150 2050
 $Comp
-L LED:WS2812B RGB?
-U 1 1 5CD14ACB
-P 3725 1275
-AR Path="/5CD14ACB" Ref="RGB?"  Part="0" 
-AR Path="/5CCE7907/5CD14ACB" Ref="RGB4"  Part="1" 
-F 0 "RGB4" H 3925 1500 50  0000 R BNN
-F 1 "WS2812" H 3775 1050 50  0000 L TNN
-F 2 "MechLlama:LED_WS-2812B-Mini" H 3775 975 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3825 900 50  0001 L TNN
-	1    3725 1275
+L Device:LED_ABRG D?
+U 1 1 602592AE
+P 3700 1175
+AR Path="/5CCE7907/602592AE" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592AE" Ref="D?"  Part="1" 
+F 0 "D?" H 3700 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 3700 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 3700 1125 50  0001 C CNN
+F 3 "~" H 3700 1125 50  0001 C CNN
+	1    3700 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602592B4
+P 3700 2050
+AR Path="/5CCE7907/602592B4" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592B4" Ref="D?"  Part="1" 
+F 0 "D?" H 3700 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 3700 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 3700 2000 50  0001 C CNN
+F 3 "~" H 3700 2000 50  0001 C CNN
+	1    3700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602592BA
+P 3700 2925
+AR Path="/5CCE7907/602592BA" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592BA" Ref="D?"  Part="1" 
+F 0 "D?" H 3700 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 3700 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 3700 2875 50  0001 C CNN
+F 3 "~" H 3700 2875 50  0001 C CNN
+	1    3700 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602592C0
+P 3700 3800
+AR Path="/5CCE7907/602592C0" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592C0" Ref="D?"  Part="1" 
+F 0 "D?" H 3700 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 3700 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 3700 3750 50  0001 C CNN
+F 3 "~" H 3700 3750 50  0001 C CNN
+	1    3700 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 1275 3425 1275
+	3500 975  3275 975 
 Wire Wire Line
-	3050 875  3725 875 
+	3500 1175 3275 1175
+Wire Wire Line
+	3500 1375 3275 1375
+Text Label 3275 975  0    50   ~ 0
+SW1
+Text Label 3275 1175 0    50   ~ 0
+SW2
+Text Label 3275 1375 0    50   ~ 0
+SW3
+Wire Wire Line
+	3500 1850 3275 1850
+Wire Wire Line
+	3500 2050 3275 2050
+Wire Wire Line
+	3500 2250 3275 2250
+Text Label 3275 1850 0    50   ~ 0
+SW4
+Text Label 3275 2050 0    50   ~ 0
+SW5
+Text Label 3275 2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	3500 2725 3275 2725
+Wire Wire Line
+	3500 2925 3275 2925
+Wire Wire Line
+	3500 3125 3275 3125
+Text Label 3275 2725 0    50   ~ 0
+SW7
+Text Label 3275 2925 0    50   ~ 0
+SW8
+Text Label 3275 3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	3500 3600 3275 3600
+Wire Wire Line
+	3500 3800 3275 3800
+Wire Wire Line
+	3500 4000 3275 4000
+Text Label 3275 3600 0    50   ~ 0
+SW10
+Text Label 3275 3800 0    50   ~ 0
+SW11
+Text Label 3275 4000 0    50   ~ 0
+SW12
+Wire Wire Line
+	3900 1175 4000 1175
+Wire Wire Line
+	3900 3800 4000 3800
+Wire Wire Line
+	4000 3800 4000 2925
+Wire Wire Line
+	3900 2050 4000 2050
+Connection ~ 4000 2050
+Wire Wire Line
+	4000 2050 4000 1175
+Wire Wire Line
+	3900 2925 4000 2925
+Connection ~ 4000 2925
+Wire Wire Line
+	4000 2925 4000 2050
 $Comp
-L LED:WS2812B RGB?
-U 1 1 5CD15325
-P 4400 1275
-AR Path="/5CD15325" Ref="RGB?"  Part="0" 
-AR Path="/5CCE7907/5CD15325" Ref="RGB5"  Part="1" 
-F 0 "RGB5" H 4600 1500 50  0000 R BNN
-F 1 "WS2812" H 4450 1050 50  0000 L TNN
-F 2 "MechLlama:LED_WS-2812B-Mini" H 4450 975 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4500 900 50  0001 L TNN
-	1    4400 1275
+L Device:LED_ABRG D?
+U 1 1 602592EA
+P 4525 1175
+AR Path="/5CCE7907/602592EA" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592EA" Ref="D?"  Part="1" 
+F 0 "D?" H 4525 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 4525 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 4525 1125 50  0001 C CNN
+F 3 "~" H 4525 1125 50  0001 C CNN
+	1    4525 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602592F0
+P 4525 2050
+AR Path="/5CCE7907/602592F0" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592F0" Ref="D?"  Part="1" 
+F 0 "D?" H 4525 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 4525 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 4525 2000 50  0001 C CNN
+F 3 "~" H 4525 2000 50  0001 C CNN
+	1    4525 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602592F6
+P 4525 2925
+AR Path="/5CCE7907/602592F6" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592F6" Ref="D?"  Part="1" 
+F 0 "D?" H 4525 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 4525 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 4525 2875 50  0001 C CNN
+F 3 "~" H 4525 2875 50  0001 C CNN
+	1    4525 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602592FC
+P 4525 3800
+AR Path="/5CCE7907/602592FC" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602592FC" Ref="D?"  Part="1" 
+F 0 "D?" H 4525 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 4525 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 4525 3750 50  0001 C CNN
+F 3 "~" H 4525 3750 50  0001 C CNN
+	1    4525 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4025 1275 4100 1275
+	4325 975  4100 975 
 Wire Wire Line
-	3725 875  4400 875 
+	4325 1175 4100 1175
+Wire Wire Line
+	4325 1375 4100 1375
+Text Label 4100 975  0    50   ~ 0
+SW1
+Text Label 4100 1175 0    50   ~ 0
+SW2
+Text Label 4100 1375 0    50   ~ 0
+SW3
+Wire Wire Line
+	4325 1850 4100 1850
+Wire Wire Line
+	4325 2050 4100 2050
+Wire Wire Line
+	4325 2250 4100 2250
+Text Label 4100 1850 0    50   ~ 0
+SW4
+Text Label 4100 2050 0    50   ~ 0
+SW5
+Text Label 4100 2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	4325 2725 4100 2725
+Wire Wire Line
+	4325 2925 4100 2925
+Wire Wire Line
+	4325 3125 4100 3125
+Text Label 4100 2725 0    50   ~ 0
+SW7
+Text Label 4100 2925 0    50   ~ 0
+SW8
+Text Label 4100 3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	4325 3600 4100 3600
+Wire Wire Line
+	4325 3800 4100 3800
+Wire Wire Line
+	4325 4000 4100 4000
+Text Label 4100 3600 0    50   ~ 0
+SW10
+Text Label 4100 3800 0    50   ~ 0
+SW11
+Text Label 4100 4000 0    50   ~ 0
+SW12
+Wire Wire Line
+	4725 1175 4825 1175
+Wire Wire Line
+	4725 3800 4825 3800
+Wire Wire Line
+	4825 3800 4825 2925
+Wire Wire Line
+	4725 2050 4825 2050
+Connection ~ 4825 2050
+Wire Wire Line
+	4825 2050 4825 1175
+Wire Wire Line
+	4725 2925 4825 2925
+Connection ~ 4825 2925
+Wire Wire Line
+	4825 2925 4825 2050
 $Comp
-L LED:WS2812B RGB?
-U 1 1 5CD15DD7
-P 5075 1275
-AR Path="/5CD15DD7" Ref="RGB?"  Part="0" 
-AR Path="/5CCE7907/5CD15DD7" Ref="RGB6"  Part="1" 
-F 0 "RGB6" H 5275 1500 50  0000 R BNN
-F 1 "WS2812" H 5125 1050 50  0000 L TNN
-F 2 "MechLlama:LED_WS-2812B-Mini" H 5125 975 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5175 900 50  0001 L TNN
-	1    5075 1275
+L Device:LED_ABRG D?
+U 1 1 60259326
+P 5375 1175
+AR Path="/5CCE7907/60259326" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259326" Ref="D?"  Part="1" 
+F 0 "D?" H 5375 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 5375 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 5375 1125 50  0001 C CNN
+F 3 "~" H 5375 1125 50  0001 C CNN
+	1    5375 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6025932C
+P 5375 2050
+AR Path="/5CCE7907/6025932C" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6025932C" Ref="D?"  Part="1" 
+F 0 "D?" H 5375 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 5375 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 5375 2000 50  0001 C CNN
+F 3 "~" H 5375 2000 50  0001 C CNN
+	1    5375 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259332
+P 5375 2925
+AR Path="/5CCE7907/60259332" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259332" Ref="D?"  Part="1" 
+F 0 "D?" H 5375 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 5375 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 5375 2875 50  0001 C CNN
+F 3 "~" H 5375 2875 50  0001 C CNN
+	1    5375 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259338
+P 5375 3800
+AR Path="/5CCE7907/60259338" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259338" Ref="D?"  Part="1" 
+F 0 "D?" H 5375 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 5375 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 5375 3750 50  0001 C CNN
+F 3 "~" H 5375 3750 50  0001 C CNN
+	1    5375 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5075 875  5075 975 
+	5175 975  4950 975 
 Wire Wire Line
-	5075 1575 5075 1675
+	5175 1175 4950 1175
 Wire Wire Line
-	4700 1275 4775 1275
+	5175 1375 4950 1375
+Text Label 4950 975  0    50   ~ 0
+SW1
+Text Label 4950 1175 0    50   ~ 0
+SW2
+Text Label 4950 1375 0    50   ~ 0
+SW3
 Wire Wire Line
-	4400 875  5075 875 
+	5175 1850 4950 1850
+Wire Wire Line
+	5175 2050 4950 2050
+Wire Wire Line
+	5175 2250 4950 2250
+Text Label 4950 1850 0    50   ~ 0
+SW4
+Text Label 4950 2050 0    50   ~ 0
+SW5
+Text Label 4950 2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	5175 2725 4950 2725
+Wire Wire Line
+	5175 2925 4950 2925
+Wire Wire Line
+	5175 3125 4950 3125
+Text Label 4950 2725 0    50   ~ 0
+SW7
+Text Label 4950 2925 0    50   ~ 0
+SW8
+Text Label 4950 3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	5175 3600 4950 3600
+Wire Wire Line
+	5175 3800 4950 3800
+Wire Wire Line
+	5175 4000 4950 4000
+Text Label 4950 3600 0    50   ~ 0
+SW10
+Text Label 4950 3800 0    50   ~ 0
+SW11
+Text Label 4950 4000 0    50   ~ 0
+SW12
+Wire Wire Line
+	5575 1175 5675 1175
+Wire Wire Line
+	5575 3800 5675 3800
+Wire Wire Line
+	5675 3800 5675 2925
+Wire Wire Line
+	5575 2050 5675 2050
+Connection ~ 5675 2050
+Wire Wire Line
+	5675 2050 5675 1175
+Wire Wire Line
+	5575 2925 5675 2925
+Connection ~ 5675 2925
+Wire Wire Line
+	5675 2925 5675 2050
 $Comp
-L power:+5V #PWR05
-U 1 1 5CE3780C
-P 5550 775
-F 0 "#PWR05" H 5550 625 50  0001 C CNN
-F 1 "+5V" H 5550 915 50  0000 C CNN
-F 2 "" H 5550 775 50  0001 C CNN
-F 3 "" H 5550 775 50  0001 C CNN
-	1    5550 775 
+L Device:LED_ABRG D?
+U 1 1 60259362
+P 6225 1175
+AR Path="/5CCE7907/60259362" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259362" Ref="D?"  Part="1" 
+F 0 "D?" H 6225 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 6225 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 6225 1125 50  0001 C CNN
+F 3 "~" H 6225 1125 50  0001 C CNN
+	1    6225 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259368
+P 6225 2050
+AR Path="/5CCE7907/60259368" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259368" Ref="D?"  Part="1" 
+F 0 "D?" H 6225 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 6225 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 6225 2000 50  0001 C CNN
+F 3 "~" H 6225 2000 50  0001 C CNN
+	1    6225 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6025936E
+P 6225 2925
+AR Path="/5CCE7907/6025936E" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6025936E" Ref="D?"  Part="1" 
+F 0 "D?" H 6225 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 6225 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 6225 2875 50  0001 C CNN
+F 3 "~" H 6225 2875 50  0001 C CNN
+	1    6225 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60259374
+P 6225 3800
+AR Path="/5CCE7907/60259374" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60259374" Ref="D?"  Part="1" 
+F 0 "D?" H 6225 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 6225 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 6225 3750 50  0001 C CNN
+F 3 "~" H 6225 3750 50  0001 C CNN
+	1    6225 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 775  5550 875 
+	6025 975  5800 975 
 Wire Wire Line
-	5550 875  5075 875 
-Connection ~ 5075 875 
+	6025 1175 5800 1175
+Wire Wire Line
+	6025 1375 5800 1375
+Text Label 5800 975  0    50   ~ 0
+SW1
+Text Label 5800 1175 0    50   ~ 0
+SW2
+Text Label 5800 1375 0    50   ~ 0
+SW3
+Wire Wire Line
+	6025 1850 5800 1850
+Wire Wire Line
+	6025 2050 5800 2050
+Wire Wire Line
+	6025 2250 5800 2250
+Text Label 5800 1850 0    50   ~ 0
+SW4
+Text Label 5800 2050 0    50   ~ 0
+SW5
+Text Label 5800 2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	6025 2725 5800 2725
+Wire Wire Line
+	6025 2925 5800 2925
+Wire Wire Line
+	6025 3125 5800 3125
+Text Label 5800 2725 0    50   ~ 0
+SW7
+Text Label 5800 2925 0    50   ~ 0
+SW8
+Text Label 5800 3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	6025 3600 5800 3600
+Wire Wire Line
+	6025 3800 5800 3800
+Wire Wire Line
+	6025 4000 5800 4000
+Text Label 5800 3600 0    50   ~ 0
+SW10
+Text Label 5800 3800 0    50   ~ 0
+SW11
+Text Label 5800 4000 0    50   ~ 0
+SW12
+Wire Wire Line
+	6425 1175 6525 1175
+Wire Wire Line
+	6425 3800 6525 3800
+Wire Wire Line
+	6525 3800 6525 2925
+Wire Wire Line
+	6425 2050 6525 2050
+Connection ~ 6525 2050
+Wire Wire Line
+	6525 2050 6525 1175
+Wire Wire Line
+	6425 2925 6525 2925
+Connection ~ 6525 2925
+Wire Wire Line
+	6525 2925 6525 2050
 $Comp
-L power:GND #PWR08
-U 1 1 5CE4289A
-P 5550 1775
-F 0 "#PWR08" H 5550 1525 50  0001 C CNN
-F 1 "GND" H 5550 1625 50  0000 C CNN
-F 2 "" H 5550 1775 50  0001 C CNN
-F 3 "" H 5550 1775 50  0001 C CNN
-	1    5550 1775
+L Device:LED_ABRG D?
+U 1 1 6025939E
+P 7050 1175
+AR Path="/5CCE7907/6025939E" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6025939E" Ref="D?"  Part="1" 
+F 0 "D?" H 7050 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 7050 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 7050 1125 50  0001 C CNN
+F 3 "~" H 7050 1125 50  0001 C CNN
+	1    7050 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602593A4
+P 7050 2050
+AR Path="/5CCE7907/602593A4" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602593A4" Ref="D?"  Part="1" 
+F 0 "D?" H 7050 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 7050 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 7050 2000 50  0001 C CNN
+F 3 "~" H 7050 2000 50  0001 C CNN
+	1    7050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602593AA
+P 7050 2925
+AR Path="/5CCE7907/602593AA" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602593AA" Ref="D?"  Part="1" 
+F 0 "D?" H 7050 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 7050 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 7050 2875 50  0001 C CNN
+F 3 "~" H 7050 2875 50  0001 C CNN
+	1    7050 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602593B0
+P 7050 3800
+AR Path="/5CCE7907/602593B0" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602593B0" Ref="D?"  Part="1" 
+F 0 "D?" H 7050 4170 50  0000 C CNN
+F 1 "LED_ABRG" H 7050 3450 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 7050 3750 50  0001 C CNN
+F 3 "~" H 7050 3750 50  0001 C CNN
+	1    7050 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 1775 5550 1675
+	6850 975  6625 975 
 Wire Wire Line
-	5550 1675 5075 1675
-Connection ~ 5075 1675
+	6850 1175 6625 1175
 Wire Wire Line
-	4400 875  4400 975 
-Connection ~ 4400 875 
+	6850 1375 6625 1375
+Text Label 6625 975  0    50   ~ 0
+SW1
+Text Label 6625 1175 0    50   ~ 0
+SW2
+Text Label 6625 1375 0    50   ~ 0
+SW3
 Wire Wire Line
-	3725 875  3725 975 
-Connection ~ 3725 875 
+	6850 1850 6625 1850
 Wire Wire Line
-	3050 875  3050 975 
+	6850 2050 6625 2050
 Wire Wire Line
-	1700 875  2375 875 
-Connection ~ 3050 875 
+	6850 2250 6625 2250
+Text Label 6625 1850 0    50   ~ 0
+SW4
+Text Label 6625 2050 0    50   ~ 0
+SW5
+Text Label 6625 2250 0    50   ~ 0
+SW6
 Wire Wire Line
-	2375 875  2375 975 
-Connection ~ 2375 875 
+	6850 2725 6625 2725
 Wire Wire Line
-	2375 875  3050 875 
+	6850 2925 6625 2925
 Wire Wire Line
-	1700 1675 1700 1575
+	6850 3125 6625 3125
+Text Label 6625 2725 0    50   ~ 0
+SW7
+Text Label 6625 2925 0    50   ~ 0
+SW8
+Text Label 6625 3125 0    50   ~ 0
+SW9
 Wire Wire Line
-	1700 1675 2375 1675
+	6850 3600 6625 3600
 Wire Wire Line
-	2375 1575 2375 1675
-Connection ~ 2375 1675
+	6850 3800 6625 3800
 Wire Wire Line
-	2375 1675 3050 1675
+	6850 4000 6625 4000
+Text Label 6625 3600 0    50   ~ 0
+SW10
+Text Label 6625 3800 0    50   ~ 0
+SW11
+Text Label 6625 4000 0    50   ~ 0
+SW12
 Wire Wire Line
-	3050 1575 3050 1675
-Connection ~ 3050 1675
+	7250 1175 7350 1175
 Wire Wire Line
-	3050 1675 3725 1675
+	7250 3800 7350 3800
 Wire Wire Line
-	3725 1575 3725 1675
-Connection ~ 3725 1675
+	7350 3800 7350 2925
 Wire Wire Line
-	3725 1675 4400 1675
+	7250 2050 7350 2050
+Connection ~ 7350 2050
 Wire Wire Line
-	4400 1575 4400 1675
-Connection ~ 4400 1675
+	7350 2050 7350 1175
 Wire Wire Line
-	4400 1675 5075 1675
-Text Notes 750  675  0    50   ~ 0
-Backlighting
-NoConn ~ 5375 1275
+	7250 2925 7350 2925
+Connection ~ 7350 2925
+Wire Wire Line
+	7350 2925 7350 2050
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6026AD4E
+P 7875 1175
+AR Path="/5CCE7907/6026AD4E" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6026AD4E" Ref="D?"  Part="1" 
+F 0 "D?" H 7875 1545 50  0000 C CNN
+F 1 "LED_ABRG" H 7875 825 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 7875 1125 50  0001 C CNN
+F 3 "~" H 7875 1125 50  0001 C CNN
+	1    7875 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6026AD54
+P 7875 2050
+AR Path="/5CCE7907/6026AD54" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6026AD54" Ref="D?"  Part="1" 
+F 0 "D?" H 7875 2420 50  0000 C CNN
+F 1 "LED_ABRG" H 7875 1700 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 7875 2000 50  0001 C CNN
+F 3 "~" H 7875 2000 50  0001 C CNN
+	1    7875 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 6026AD5A
+P 7875 2925
+AR Path="/5CCE7907/6026AD5A" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/6026AD5A" Ref="D?"  Part="1" 
+F 0 "D?" H 7875 3295 50  0000 C CNN
+F 1 "LED_ABRG" H 7875 2575 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 7875 2875 50  0001 C CNN
+F 3 "~" H 7875 2875 50  0001 C CNN
+	1    7875 2925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7675 975  7450 975 
+Wire Wire Line
+	7675 1175 7450 1175
+Wire Wire Line
+	7675 1375 7450 1375
+Text Label 7450 975  0    50   ~ 0
+SW1
+Text Label 7450 1175 0    50   ~ 0
+SW2
+Text Label 7450 1375 0    50   ~ 0
+SW3
+Wire Wire Line
+	7675 1850 7450 1850
+Wire Wire Line
+	7675 2050 7450 2050
+Wire Wire Line
+	7675 2250 7450 2250
+Text Label 7450 1850 0    50   ~ 0
+SW4
+Text Label 7450 2050 0    50   ~ 0
+SW5
+Text Label 7450 2250 0    50   ~ 0
+SW6
+Wire Wire Line
+	7675 2725 7450 2725
+Wire Wire Line
+	7675 2925 7450 2925
+Wire Wire Line
+	7675 3125 7450 3125
+Text Label 7450 2725 0    50   ~ 0
+SW7
+Text Label 7450 2925 0    50   ~ 0
+SW8
+Text Label 7450 3125 0    50   ~ 0
+SW9
+Wire Wire Line
+	8075 1175 8175 1175
+Wire Wire Line
+	8075 2050 8175 2050
+Connection ~ 8175 2050
+Wire Wire Line
+	8175 2050 8175 1175
+Wire Wire Line
+	8075 2925 8175 2925
+Wire Wire Line
+	8175 2925 8175 2050
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602775EC
+P 1150 4875
+AR Path="/5CCE7907/602775EC" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602775EC" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 5245 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 4525 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 4825 50  0001 C CNN
+F 3 "~" H 1150 4825 50  0001 C CNN
+	1    1150 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602775F2
+P 1150 5750
+AR Path="/5CCE7907/602775F2" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602775F2" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 6120 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 5400 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 5700 50  0001 C CNN
+F 3 "~" H 1150 5700 50  0001 C CNN
+	1    1150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602775F8
+P 1150 6625
+AR Path="/5CCE7907/602775F8" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602775F8" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 6995 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 6275 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 6575 50  0001 C CNN
+F 3 "~" H 1150 6575 50  0001 C CNN
+	1    1150 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 602775FE
+P 1150 7500
+AR Path="/5CCE7907/602775FE" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/602775FE" Ref="D?"  Part="1" 
+F 0 "D?" H 1150 7870 50  0000 C CNN
+F 1 "LED_ABRG" H 1150 7150 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1150 7450 50  0001 C CNN
+F 3 "~" H 1150 7450 50  0001 C CNN
+	1    1150 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4675 725  4675
+Wire Wire Line
+	950  4875 725  4875
+Wire Wire Line
+	950  5075 725  5075
+Text Label 725  4675 0    50   ~ 0
+SW1
+Text Label 725  4875 0    50   ~ 0
+SW2
+Text Label 725  5075 0    50   ~ 0
+SW3
+Wire Wire Line
+	950  5550 725  5550
+Wire Wire Line
+	950  5750 725  5750
+Wire Wire Line
+	950  5950 725  5950
+Text Label 725  5550 0    50   ~ 0
+SW4
+Text Label 725  5750 0    50   ~ 0
+SW5
+Text Label 725  5950 0    50   ~ 0
+SW6
+Wire Wire Line
+	950  6425 725  6425
+Wire Wire Line
+	950  6625 725  6625
+Wire Wire Line
+	950  6825 725  6825
+Text Label 725  6425 0    50   ~ 0
+SW7
+Text Label 725  6625 0    50   ~ 0
+SW8
+Text Label 725  6825 0    50   ~ 0
+SW9
+Wire Wire Line
+	950  7300 725  7300
+Wire Wire Line
+	950  7500 725  7500
+Wire Wire Line
+	950  7700 725  7700
+Text Label 725  7300 0    50   ~ 0
+SW10
+Text Label 725  7500 0    50   ~ 0
+SW11
+Text Label 725  7700 0    50   ~ 0
+SW12
+Wire Wire Line
+	1350 4875 1450 4875
+Wire Wire Line
+	1350 7500 1450 7500
+Wire Wire Line
+	1450 7500 1450 6625
+Wire Wire Line
+	1350 5750 1450 5750
+Connection ~ 1450 5750
+Wire Wire Line
+	1450 5750 1450 4875
+Wire Wire Line
+	1350 6625 1450 6625
+Connection ~ 1450 6625
+Wire Wire Line
+	1450 6625 1450 5750
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60335CBF
+P 1975 4875
+AR Path="/5CCE7907/60335CBF" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60335CBF" Ref="D?"  Part="1" 
+F 0 "D?" H 1975 5245 50  0000 C CNN
+F 1 "LED_ABRG" H 1975 4525 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1975 4825 50  0001 C CNN
+F 3 "~" H 1975 4825 50  0001 C CNN
+	1    1975 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ABRG D?
+U 1 1 60335CC5
+P 1975 5750
+AR Path="/5CCE7907/60335CC5" Ref="D?"  Part="1" 
+AR Path="/5CCE7907/601E77BC/60335CC5" Ref="D?"  Part="1" 
+F 0 "D?" H 1975 6120 50  0000 C CNN
+F 1 "LED_ABRG" H 1975 5400 50  0000 C CNN
+F 2 "MechLlama:LED_Wurth_150141M173100" H 1975 5700 50  0001 C CNN
+F 3 "~" H 1975 5700 50  0001 C CNN
+	1    1975 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 4675 1550 4675
+Wire Wire Line
+	1775 4875 1550 4875
+Wire Wire Line
+	1775 5075 1550 5075
+Text Label 1550 4675 0    50   ~ 0
+SW1
+Text Label 1550 4875 0    50   ~ 0
+SW2
+Text Label 1550 5075 0    50   ~ 0
+SW3
+Wire Wire Line
+	1775 5550 1550 5550
+Wire Wire Line
+	1775 5750 1550 5750
+Wire Wire Line
+	1775 5950 1550 5950
+Text Label 1550 5550 0    50   ~ 0
+SW4
+Text Label 1550 5750 0    50   ~ 0
+SW5
+Text Label 1550 5950 0    50   ~ 0
+SW6
+Wire Wire Line
+	2175 4875 2275 4875
+Wire Wire Line
+	2175 5750 2275 5750
+Wire Wire Line
+	2275 5750 2275 4875
+Text HLabel 1450 850  1    50   Input ~ 0
+CS1
+Text HLabel 2300 850  1    50   Input ~ 0
+CS2
+Wire Wire Line
+	2300 1175 2300 850 
+Connection ~ 2300 1175
+Text HLabel 3150 850  1    50   Input ~ 0
+CS3
+Text HLabel 4000 850  1    50   Input ~ 0
+CS4
+Text HLabel 4825 850  1    50   Input ~ 0
+CS5
+Text HLabel 5675 850  1    50   Input ~ 0
+CS6
+Text HLabel 6525 850  1    50   Input ~ 0
+CS7
+Wire Wire Line
+	4000 850  4000 1175
+Connection ~ 4000 1175
+Wire Wire Line
+	4825 850  4825 1175
+Connection ~ 4825 1175
+Wire Wire Line
+	3150 850  3150 1175
+Connection ~ 3150 1175
+Wire Wire Line
+	5675 850  5675 1175
+Connection ~ 5675 1175
+Wire Wire Line
+	6525 1175 6525 850 
+Connection ~ 6525 1175
+Text HLabel 7350 850  1    50   Input ~ 0
+CS8
+Wire Wire Line
+	7350 1175 7350 850 
+Connection ~ 7350 1175
+Text HLabel 8175 850  1    50   Input ~ 0
+CS9
+Wire Wire Line
+	8175 1175 8175 850 
+Connection ~ 8175 1175
+Text HLabel 1450 4550 1    50   Input ~ 0
+CS10
+Wire Wire Line
+	1450 4875 1450 4550
+Connection ~ 1450 4875
+Text HLabel 2275 4550 1    50   Input ~ 0
+CS11
+Wire Wire Line
+	2275 4550 2275 4875
+Connection ~ 2275 4875
+Text Label 3600 4725 2    50   ~ 0
+SW1
+Wire Wire Line
+	3275 4725 3600 4725
+Text Label 3600 4825 2    50   ~ 0
+SW2
+Wire Wire Line
+	3275 4825 3600 4825
+Text Label 3600 4925 2    50   ~ 0
+SW3
+Wire Wire Line
+	3275 4925 3600 4925
+Text Label 3600 5025 2    50   ~ 0
+SW4
+Wire Wire Line
+	3275 5025 3600 5025
+Text Label 3600 5125 2    50   ~ 0
+SW5
+Wire Wire Line
+	3275 5125 3600 5125
+Text Label 3600 5225 2    50   ~ 0
+SW6
+Wire Wire Line
+	3275 5225 3600 5225
+Text Label 3600 5325 2    50   ~ 0
+SW7
+Wire Wire Line
+	3275 5325 3600 5325
+Text Label 3600 5425 2    50   ~ 0
+SW8
+Wire Wire Line
+	3275 5425 3600 5425
+Text Label 3600 5525 2    50   ~ 0
+SW9
+Wire Wire Line
+	3275 5525 3600 5525
+Text Label 3600 5625 2    50   ~ 0
+SW10
+Wire Wire Line
+	3275 5625 3600 5625
+Text Label 3600 5725 2    50   ~ 0
+SW11
+Wire Wire Line
+	3275 5725 3600 5725
+Text Label 3600 5825 2    50   ~ 0
+SW12
+Wire Wire Line
+	3275 5825 3600 5825
+Text HLabel 3275 5825 0    50   Output ~ 0
+SW12
+Text HLabel 3275 5725 0    50   Output ~ 0
+SW11
+Text HLabel 3275 5625 0    50   Output ~ 0
+SW10
+Text HLabel 3275 5525 0    50   Output ~ 0
+SW9
+Text HLabel 3275 5425 0    50   Output ~ 0
+SW8
+Text HLabel 3275 5325 0    50   Output ~ 0
+SW7
+Text HLabel 3275 5225 0    50   Output ~ 0
+SW6
+Text HLabel 3275 5125 0    50   Output ~ 0
+SW5
+Text HLabel 3275 5025 0    50   Output ~ 0
+SW4
+Text HLabel 3275 4925 0    50   Output ~ 0
+SW3
+Text HLabel 3275 4825 0    50   Output ~ 0
+SW2
+Text HLabel 3275 4725 0    50   Output ~ 0
+SW1
 $EndSCHEMATC

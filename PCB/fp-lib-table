@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name MechLlama)(type KiCad)(uri ${KIPRJMOD}/libraries/MechLlama-KiCad/MechLlama.pretty)(options "")(descr ""))
   (lib (name MX_Only)(type KiCad)(uri ${KIPRJMOD}/libraries/MX_Alps_Hybrid/MX_Only.pretty)(options "")(descr ""))
+  (lib (name keyswitches.pretty)(type KiCad)(uri ${KIPRJMOD}/libraries/keyswitches.pretty)(options "")(descr ""))
 )
